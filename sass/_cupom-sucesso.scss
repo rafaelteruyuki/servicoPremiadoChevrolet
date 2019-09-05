@@ -1,0 +1,134 @@
+@import "mixins";
+
+.cupom-sucesso{
+		
+	.imprimir{
+		float: right;
+		display: inline;
+		@include skewElement ($amarelo, $branco, 1.5em);
+		margin-bottom: 20px;
+    	margin-right: 10px;
+		
+		i{
+			@include unskewContent;
+			margin: 5px 10px;
+		}
+	}
+	
+	.numeros-cupons{
+		@include skewElement($branco, $amarelo, 1.8em);
+		clear: right;
+		width: 70%;
+		margin: 0 auto;
+		padding: 30px 80px;
+		position: relative;
+		margin-bottom: 20px;
+		
+		@media screen and (max-width: 1200px){
+				font-size: 1.2em;
+			}
+		@media screen and (max-width: 992px){
+				font-size: 1.6em;
+			}
+		@media screen and (max-width: 650px){
+				font-size: 1.2em;
+				padding: 20px;
+			}
+		
+		table{
+			@include unskewContent;
+			width: 100%;
+    		text-align: center;
+			font-family: Louis-Bold;
+			
+			td:nth-child(2n+1){
+				padding-right: 25px;
+			}
+		}
+	}
+	.numeros-cupons::before{
+		@include fioEmVolta(-10px, $branco);
+	}
+	.row-credito{
+		display: flex;
+		margin-bottom: 25px;
+		@media (max-width: 1200px){
+			flex-direction: column;
+			justify-content: center;
+		}
+		.col-info{
+			display: flex;
+			align-items: center;
+			margin-left: -15px;
+			font-family: Louis-Italic;
+			text-transform: uppercase;
+			font-size: 1.1em;
+			@media (max-width: 1200px){
+				justify-content: center;
+				p{
+					text-align: center;
+				}
+			}
+			
+			strong{
+				font-weight: normal;
+				font-family: Louis-BoldItalic;
+				color: $amarelo;
+				
+			}
+		}
+	}
+	
+	.cupom-credito{
+		@include skewElement($branco, $amarelo, 1em);
+		width: 70%;
+		margin: 20px auto;
+		padding: 10px 40px 10px 25px;
+		
+		h4, p{
+			@include unskewContent;
+		}
+		
+		h4{
+			font-size: 1.5em;
+			font-family: Louis-BoldItalic;
+			text-transform: uppercase;
+			color: $cinza;
+			text-align: center;
+		}
+		p{
+			text-transform: uppercase;
+			font-family: Louis-BoldItalic;
+			font-size: 1.5em;
+			display: flex;
+    		align-items: flex-start;
+			
+			@media (max-width: 1200px){
+				justify-content: center;
+			}
+			
+			.moeda{
+				align-self: flex-end;
+			}
+			.reais{
+				font-size: 3em;
+				margin: 0 10px;
+				line-height: 1;
+			}
+		}
+	}
+	
+	.cupom-credito::before{
+		@include fioEmVolta(-7px, $branco);
+	}
+	
+	.btn-cadastrar{
+		@include botao (#ffc334, #ffb334);
+		@media screen and (max-width: 992px){
+				margin-bottom: 20px;
+			} 
+	}
+	.btn-finalizar{
+		@include botao (#5d5f63, #4a4d52);
+	}
+}

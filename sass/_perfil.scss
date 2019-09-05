@@ -1,0 +1,168 @@
+@import "mixins";
+
+#perfil{
+	.skewTitle{
+		@include skewElement ($branco, $cinza, 1.2em);
+		font-family: Louis-BoldItalic;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 30px 35px;
+		position: relative;
+		margin-top: 50px;
+		margin-bottom: 40px;
+		margin-left: 80px;
+		
+		h2{
+			@include unskewContent;
+			margin: 0;
+			line-height: 0;
+		}
+	}
+	.skewTitle::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -8px;
+		width: 5px;
+		background: $amarelo;
+		margin-left: 3px;
+	}
+	
+	.row-title{
+		display: none;
+		@media (max-width: 992px){
+			display: block;
+		}
+	}
+	
+	.row-perfil{
+		@media (max-width: 992px){
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	
+	.col-carro{
+		margin-bottom: 50px;
+		@media (max-width: 992px){
+			order: 1;
+			
+			.skewTitle{
+				display: none;
+			}
+		}
+	}
+	
+	.carro{
+		display: flex;
+		justify-content: flex-end;
+		@media (max-width: 992px){
+			justify-content: center;
+			margin-top: 50px;
+		}
+
+		img{
+			height: 530px;
+		}
+		
+		img.carro-xs{
+			display: none;
+			@media (max-width: 992px){
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+		}
+		img.carro-lg{
+			@media (max-width: 992px){
+				display: none;
+			}
+		}
+	}
+	
+	.botao-servicos{
+		text-align: center;
+		
+		img{
+			width: 80%;
+			margin-top: 20px;
+			@media (max-width: 992px){
+				width: 70%;
+			}
+		}
+	}
+	
+	.formulario{
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+		
+		@media (max-width: 992px){
+			order: 0;
+		}
+		
+		form{
+			margin-top: 50px;
+			font-family: Louis-Italic;
+			color: $cinza;
+			text-transform: uppercase;
+			padding: 0 20px;
+
+			label{
+				font-weight: normal;
+			}
+
+			input, select, button{
+				border:0;
+				border-radius:0;
+				text-transform: uppercase;
+			}
+
+			button{
+				font-family: Louis-Regular;
+				color: #FFFFFF;
+				font-size: 1.2em;
+				background: linear-gradient(to bottom, #ffc334 50%, #ffb334 50%);
+				padding: 8px 0;
+				margin-top: 25px;
+				position: relative;
+				cursor: pointer;
+			}
+
+			p.text-warning{
+				font-size: 0.8em;
+				margin-top: 5px;
+			}
+			
+			#cpf, #email{
+				background: transparentize($cinza, 0.4);
+				color: $branco;
+				position: relative;
+			}
+			
+			label[for="cpf"]::after, 
+			label[for="email"]::after{
+				content: '';
+				position: absolute;
+				top: 17px;
+				right: 30px;
+				width: 8px;
+				height: 9px;
+				background-image: url(../images/icon-lock.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+			
+			.row-senha{
+				font-size: 0.9em;
+				border: 1px solid #fff;
+				padding-top: 25px;
+				margin: 20px 0;
+			}
+
+		}
+	}
+	
+	
+	
+
+}

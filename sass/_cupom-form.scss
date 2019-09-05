@@ -1,0 +1,267 @@
+@import "mixins";
+
+.cupom-form{
+	h3{
+		font-size: 3.5em !important;
+		margin-top: 50px!important;
+		border-bottom: 1px solid $branco;
+		padding-bottom: 20px;
+	}
+	
+	.subtitle{
+		font-family: Louis-Italic;
+		font-size: 2em;
+		text-transform: uppercase;
+		text-align: center;
+		color: $branco;
+		margin-bottom: 30px;
+		
+		span{
+			color: $amarelo;
+		}
+	}
+	
+	legend{
+		margin-bottom: 20px;
+		font-size: 1em;
+		color: $branco;
+		border-bottom: none;
+		
+		font-family: Louis-Italic;
+		text-transform: uppercase;
+	}
+	
+	input[type=radio]{
+		display: none;
+	}
+	
+	#motivo-visita, 
+	#proxima-visita,
+	#distancia,
+	#preferencia{
+		margin-bottom: 30px;
+	}
+	
+	#motivo-visita{
+		label{
+			display: block;
+			width: auto;
+			cursor: pointer;
+			position: relative;
+		}
+		label::before{
+			content: '';
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background-color: $branco;
+			position: relative;
+			margin-right: 5px;
+			top: 2px;
+		}
+		input[type=radio]:checked + label::before{
+			background: $amarelo;
+			border: 3px solid $branco;
+		}
+	}
+	
+	#proxima-visita{
+		label{
+			display: inline-block;
+			width: 49%;
+			cursor: pointer;
+			position: relative;
+		}
+		label::after{
+			content: '';
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background-color: $branco;
+			position: relative;
+			margin-left: 5px;
+			top: 2px;
+		}
+		input[type=radio]:checked + label::after{
+			background: $amarelo;
+			border: 3px solid $branco;
+		}
+		textarea{
+			width: 100%;
+			text-transform: uppercase;
+			font-family: Louis-Regular;
+			border: none;
+			resize: none;
+			padding: 10px;
+			margin-top: 15px;
+			color: $cinza;
+		}
+	}
+	
+	#distancia{
+		input{
+			margin-top:10px;
+			-webkit-appearance: none;
+			width: 100%;
+			background: transparent;
+		}
+		input::-webkit-slider-thumb{
+			-webkit-appearance: none;
+			border: 2px solid $cinza;
+			height: 15px;
+			width: 15px;
+			border-radius: 50%;
+			background: $amarelo;
+			cursor: pointer;
+			margin-top: -5px;
+		}
+		input::-moz-range-thumb{
+			border: 2px solid $cinza;
+			height: 12px;
+			width: 12px;
+			border-radius: 50%;
+			background: $amarelo;
+			cursor: pointer;
+
+		}
+		input::-ms-thumb{
+			border: 2px solid $cinza;
+			height: 12px;
+			width: 12px;
+			border-radius: 50%;
+			background: $amarelo;
+			cursor: pointer;
+			margin-top: 0px;
+		}
+		input:focus {
+			outline: none;
+		}
+		input::-ms-track {
+			width: 100%;
+			cursor: pointer;
+			background: transparent;
+			border-color: transparent;
+			color: transparent;
+		}
+		input::-webkit-slider-runnable-track {
+			width: 100%;
+			height: 4px;
+			cursor: pointer;
+			background: $branco;
+			border-radius: 8px;
+		}
+		input:focus::-webkit-slider-runnable-track {
+			background: $branco;
+		}
+		input::-moz-range-track {
+			width: 100%;
+			height: 4px;
+			cursor: pointer;
+			background: $branco;
+			border-radius: 8px;
+		}
+		input::-ms-track {
+			width: 100%;
+			height: 4px;
+			cursor: pointer;
+			border-radius: 8px;
+			background: transparent;
+			border-color: transparent;
+			color: transparent;
+		}
+		input::-ms-fill-lower {
+			background: $branco;
+			border-radius: 8px;
+		}
+		input:focus::-ms-fill-lower {
+			background: #CCC;
+		}
+		input::-ms-fill-upper {
+			background: $branco;
+			border-radius: 8px;
+		}
+		input:focus::-ms-fill-upper {
+			background: $branco;
+		}
+		output{
+			color: $branco;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: Louis-Italic;
+		}
+	}
+	
+	#preferencia{
+		label{
+			display: inline-block;
+			width: 40%;
+			cursor: pointer;
+			position: relative;
+			vertical-align: top;
+		}
+		label[for=telefone]{
+			margin-left: 14px;
+		}
+		label::before{
+			content: '';
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background-color: $branco;
+			position: relative;
+			margin-right: 5px;
+			margin-left: -14px;
+			top: 2px;
+		}
+		input[type=radio]:checked + label::before{
+			background: $amarelo;
+			border: 3px solid $branco;
+		}
+	}
+	
+	.btn-amarelo, .btn-cinza{
+		margin-bottom: 20px;
+	}
+	
+	.btn-amarelo{
+		@include botao (#ffc334, #ffb334);
+	}
+	.btn-cinza{
+		@include botao (#5d5f63, #4a4d52);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+@import "mixins";
+
+.nf-menos-200{
+	.sucesso{
+		font-size: 3em;
+	}
+	.destaque{
+		color: $amarelo;
+	}
+	.cupom-credito{
+		@include skewElement($branco, $amarelo, 1em);
+		width: 70%;
+		margin: 20px auto;
+		padding: 10px 40px 10px 25px;
+		
+		h4, p{
+			@include unskewContent;
+		}
+		
+		h4{
+			font-size: 1.8em;
+			font-family: Louis-BoldItalic;
+			text-transform: uppercase;
+			color: $cinza;
+			text-align: center;
+			@media (min-width: 600px){
+				font-size: 3em;
+			}
+		}
+		p{
+			text-transform: uppercase;
+			font-family: Louis-BoldItalic;
+			font-size: 1.5em;
+			display: flex;
+    		align-items: flex-start;
+			justify-content: center;
+			@media (min-width: 600px){
+				font-size: 2em;
+			}
+			
+			.moeda{
+				align-self: flex-end;
+			}
+			.reais{
+				font-size: 2em;
+				margin: 0 10px;
+				line-height: 1;
+				@media (min-width: 600px){
+					font-size: 3em;
+				}
+			}
+		}
+	}
+	.cupom-credito::before{
+		@include fioEmVolta(-7px, $branco);
+	}
+	.chamada{
+		font-family: Louis-Italic;
+		font-size: 1.6em;
+		margin: 30px 20px;
+		text-align: center;
+		@media (min-width:715px){
+			font-size: 2em;
+		}
+	}
+	
+	.btn-cadastrar{
+		@include botao (#ffc334, #ffb334);
+		margin-top: 30px;
+	}
+}

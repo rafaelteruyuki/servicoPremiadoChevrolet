@@ -1,0 +1,3512 @@
+/* FONTES */
+@font-face {
+  font-family: Louis-BoldItalic;
+  src: url("../fonts/Louis-BoldItalic.eot");
+  src: url("../fonts/Louis-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-BoldItalic.woff") format("woff"), url("../fonts/Louis-BoldItalic.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: Louis-Bold;
+  src: url("../fonts/Louis-Bold.eot");
+  src: url("../fonts/Louis-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-Bold.woff") format("woff"), url("../fonts/Louis-Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: Louis-Italic;
+  src: url("../fonts/Louis-Italic.eot");
+  src: url("../fonts/Louis-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-Italic.woff") format("woff"), url("../fonts/Louis-Italic.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: Louis-Regular;
+  src: url("../fonts/Louis-Regular.eot");
+  src: url("../fonts/Louis-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-Regular.woff") format("woff"), url("../fonts/Louis-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: Louis-CondensedDemi;
+  src: url("../fonts/Louis-CondensedDemi.eot");
+  src: url("../fonts/Louis-CondensedDemi.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-CondensedDemi.woff") format("woff"), url("../fonts/Louis-CondensedDemi.svg#svgFontName") format("svg"); }
+
+@font-face {
+  font-family: Louis-CondensedRegular;
+  src: url("../fonts/Louis-CondensedRegular.eot");
+  src: url("../fonts/Louis-CondensedRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-CondensedRegular.woff") format("woff"), url("../fonts/Louis-CondensedRegular.svg#svgFontName") format("svg"); }
+
+/* line 54, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+html, body {
+  height: 100%;
+  font-size: 14px; }
+
+/* line 59, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+body {
+  background: url("../images/background.jpg") no-repeat center -150px;
+  background-size: cover;
+  padding-top: 80px; }
+
+/* line 65, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.btn-abre {
+  display: none;
+  height: 80px; }
+
+/* line 70, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.mobile-menu {
+  display: none; }
+
+/* line 75, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+header {
+  max-height: 80px;
+  background: #4a4d52;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20; }
+  /* line 83, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  header .cabecalho {
+    position: relative;
+    height: 80px; }
+    /* line 87, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .cabecalho .logo {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      /* line 93, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .cabecalho .logo img {
+        width: 100px;
+        display: table; }
+  /* line 100, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  header .main-menu {
+    display: flex;
+    align-items: center;
+    height: 80px; }
+    /* line 105, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .main-menu nav {
+      width: 100%; }
+      /* line 107, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .main-menu nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between; }
+        /* line 113, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .main-menu nav ul li {
+          display: inline; }
+        /* line 117, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .main-menu nav ul li a {
+          font-family: Louis-CondensedRegular;
+          font-size: 1em;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          text-decoration: none;
+          position: relative; }
+        /* line 126, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .main-menu nav ul li a:hover:after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 100%;
+          height: 5px;
+          background: #FFB334;
+          transform: skewX(-30deg); }
+  /* line 140, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  header .login-form {
+    position: relative;
+    z-index: 21;
+    font-family: Louis-Regular; }
+    /* line 145, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .login-form form {
+      height: 200%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 20px;
+      background-color: #FFB334; }
+      /* line 153, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .login-form form p {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #4a4d52;
+        margin-bottom: 10px; }
+      /* line 161, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .login-form form .inputs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px; }
+        /* line 166, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .login-form form .inputs input {
+          width: 48%;
+          height: 25px;
+          border: 0;
+          padding: 5px 8px;
+          font-family: Louis-Regular;
+          font-size: 0.9em; }
+      /* line 176, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .login-form form .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        /* line 181, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .login-form form .buttons a {
+          color: #4a4d52;
+          font-family: Louis-Regular;
+          text-decoration: none;
+          position: relative; }
+        /* line 188, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .login-form form .buttons a:after {
+          content: '';
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          margin: auto;
+          width: 0%;
+          border-bottom: 1px solid #4a4d52;
+          transition: 0.4s ease; }
+        /* line 199, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .login-form form .buttons a:hover:after {
+          width: 100%; }
+        /* line 203, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .login-form form .buttons button {
+          width: 48%;
+          border: 0;
+          background-color: #4a4d52;
+          padding: 5px 0;
+          color: #FFFFFF;
+          text-transform: capitalize;
+          font-family: Louis-Regular;
+          cursor: pointer;
+          position: relative; }
+        /* line 215, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        header .login-form form .buttons button:before {
+          position: absolute;
+          content: '';
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0; }
+  /* line 227, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  header .col-usuario {
+    overflow-x: hidden;
+    padding-right: 0; }
+  /* line 232, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  header .box {
+    transform: skewX(-20deg);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #FFB334;
+    padding-left: 30px;
+    font-family: Louis-Italic;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #4a4d52; }
+    /* line 246, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .box .box-usuario {
+      transform: skewX(20deg);
+      flex-grow: 1; }
+      /* line 250, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .box .box-usuario p {
+        margin: 0; }
+    /* line 255, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .box .box-perfil, header .box .box-cupons {
+      width: 60px;
+      margin-right: 10px;
+      background: #ffd234; }
+      /* line 260, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .box .box-perfil img, header .box .box-cupons img {
+        width: 22px; }
+    /* line 265, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .box .box-perfil, header .box .box-cupons, header .box .box-sair {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: skewX(20deg);
+      height: 100%;
+      padding: 10px; }
+      /* line 274, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .box .box-perfil a, header .box .box-cupons a, header .box .box-sair a {
+        font-size: 0.8em;
+        color: #4a4d52;
+        text-decoration: none;
+        text-align: center; }
+      /* line 281, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .box .box-perfil a:hover, header .box .box-cupons a:hover, header .box .box-sair a:hover {
+        text-decoration: underline; }
+      /* line 285, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .box .box-perfil img, header .box .box-cupons img, header .box .box-sair img {
+        margin-bottom: 10px; }
+    /* line 290, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .box .box-sair {
+      width: 40px;
+      background: #ff5a34; }
+      /* line 294, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .box .box-sair img {
+        width: 100%; }
+      /* line 298, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      header .box .box-sair a {
+        color: #FFFFFF; }
+
+/* line 305, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.ativo:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: #FFB334;
+  transform: skewX(-30deg); }
+
+/* line 316, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.nota-fiscal {
+  padding-bottom: 50px; }
+  /* line 319, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .carro {
+    display: flex;
+    justify-content: flex-end; }
+    /* line 323, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .carro img {
+      height: 530px; }
+    /* line 327, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .carro img.carro-xs {
+      display: none; }
+  /* line 332, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal img.images {
+    width: 100%;
+    margin-top: 20px; }
+  /* line 337, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .botao-servicos {
+    text-align: center; }
+    /* line 339, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .botao-servicos img {
+      width: 80%;
+      margin-top: 20px; }
+  /* line 345, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .container-cadastro {
+    padding: 20px 30px;
+    color: #FFFFFF;
+    background-image: -webkit-linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0));
+    background-image: -o-linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0));
+    background-image: linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0)); }
+    @media (min-width: 768px) {
+      /* line 345, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro {
+        margin-right: -15px; } }
+    /* line 356, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .container-cadastro h3 {
+      font-family: Louis-BoldItalic;
+      font-size: 2.5em;
+      line-height: 1;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 40px; }
+      /* line 365, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro h3 span {
+        color: #FFB334; }
+    /* line 370, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .container-cadastro h3.sucesso {
+      font-size: 3em; }
+    /* line 374, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .container-cadastro label {
+      font-family: Louis-Italic;
+      font-weight: normal;
+      text-transform: uppercase;
+      width: 100%; }
+    /* line 381, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .container-cadastro .row-steps {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0.8em;
+      border-bottom: 1px solid #FFFFFF;
+      padding-bottom: 15px; }
+      /* line 388, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-steps input {
+        border: none;
+        width: 100%;
+        padding: 8px;
+        color: #4a4d52;
+        font-family: Louis-Regular;
+        font-size: 1.3em;
+        font-weight: 100; }
+      /* line 398, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-steps div {
+        margin-bottom: 15px; }
+      /* line 402, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-steps div:nth-child(1) {
+        order: 1; }
+      /* line 406, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-steps div:nth-child(2) {
+        order: 3; }
+      /* line 410, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-steps div:nth-child(3) {
+        order: 2; }
+      /* line 414, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-steps div:nth-child(4) {
+        order: 4; }
+      /* line 418, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-steps span.skew {
+        font-family: Louis-Italic;
+        background: #FFB334;
+        color: #4a4d52;
+        padding: 5px 10px;
+        transform: skewX(-30deg);
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 5px; }
+        /* line 428, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-steps span.skew span {
+          display: inline-block;
+          transform: skewX(30deg); }
+    /* line 435, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .container-cadastro .row-veiculo {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0.9em; }
+      /* line 441, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-veiculo input[name=modelo-veiculo], .nota-fiscal .container-cadastro .row-veiculo select {
+        border: none;
+        width: 100%;
+        padding: 8px;
+        color: #4a4d52;
+        font-family: Louis-Regular;
+        font-size: 1.3em;
+        font-weight: 100; }
+      /* line 451, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-veiculo .modelo, .nota-fiscal .container-cadastro .row-veiculo .km, .nota-fiscal .container-cadastro .row-veiculo .ano, .nota-fiscal .container-cadastro .row-veiculo .soube {
+        margin-bottom: 15px; }
+      /* line 455, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-veiculo .modelo {
+        order: 1; }
+      /* line 459, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-veiculo .km {
+        order: 3; }
+        /* line 462, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input {
+          margin-top: 10px;
+          -webkit-appearance: none;
+          width: 100%;
+          background: transparent; }
+        /* line 468, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          border: 2px solid #4a4d52;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          background: #FFB334;
+          cursor: pointer;
+          margin-top: -5px; }
+        /* line 478, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-moz-range-thumb {
+          border: 2px solid #4a4d52;
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          background: #FFB334;
+          cursor: pointer; }
+        /* line 487, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-ms-thumb {
+          border: 2px solid #4a4d52;
+          height: 12px;
+          width: 12px;
+          border-radius: 50%;
+          background: #FFB334;
+          cursor: pointer;
+          margin-top: 0px; }
+        /* line 496, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input:focus {
+          outline: none; }
+        /* line 499, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-ms-track {
+          width: 100%;
+          cursor: pointer;
+          background: transparent;
+          border-color: transparent;
+          color: transparent; }
+        /* line 506, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-webkit-slider-runnable-track {
+          width: 100%;
+          height: 4px;
+          cursor: pointer;
+          background: #FFFFFF;
+          border-radius: 8px; }
+        /* line 513, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input:focus::-webkit-slider-runnable-track {
+          background: #FFFFFF; }
+        /* line 516, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-moz-range-track {
+          width: 100%;
+          height: 4px;
+          cursor: pointer;
+          background: #FFFFFF;
+          border-radius: 8px; }
+        /* line 523, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-ms-track {
+          width: 100%;
+          height: 4px;
+          cursor: pointer;
+          border-radius: 8px;
+          background: transparent;
+          border-color: transparent;
+          color: transparent; }
+        /* line 532, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-ms-fill-lower {
+          background: #FFFFFF;
+          border-radius: 8px; }
+        /* line 536, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input:focus::-ms-fill-lower {
+          background: #CCC; }
+        /* line 539, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input::-ms-fill-upper {
+          background: #FFFFFF;
+          border-radius: 8px; }
+        /* line 543, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km input:focus::-ms-fill-upper {
+          background: #FFFFFF; }
+        /* line 546, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .km output {
+          color: #FFFFFF;
+          text-align: center; }
+      /* line 552, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-veiculo .ano {
+        order: 2; }
+        /* line 555, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo .ano div:first-child {
+          padding-left: 0; }
+      /* line 560, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-veiculo .soube {
+        order: 4; }
+      /* line 564, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-veiculo fieldset {
+        margin-top: 10px; }
+        /* line 566, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo fieldset label {
+          display: inline-block;
+          width: auto;
+          cursor: pointer;
+          position: relative;
+          margin-right: 10px;
+          font-size: 1.1em; }
+        /* line 574, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo fieldset input[type=radio] {
+          display: none; }
+        /* line 577, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo fieldset label:after {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background: #fff;
+          margin-left: 7px;
+          position: relative;
+          top: 2px; }
+        /* line 589, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .nota-fiscal .container-cadastro .row-veiculo fieldset input[type=radio]:checked + label:after {
+          background: #FFB334;
+          border: 3px solid #FFFFFF; }
+    /* line 598, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .container-cadastro .row-botao {
+      margin-top: 30px; }
+      /* line 600, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .nota-fiscal .container-cadastro .row-botao button {
+        width: 100%;
+        font-family: Louis-Bold;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 10px;
+        background: linear-gradient(to bottom, #ffc334 50%, #ffb334 50%);
+        border: none; }
+
+/* line 615, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.login {
+  position: relative;
+  font-family: Louis-Regular;
+  margin-bottom: 170px; }
+  /* line 620, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .coluna-carro-mobile {
+    display: none; }
+  /* line 624, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .carro {
+    display: flex;
+    justify-content: center; }
+    /* line 628, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .carro img {
+      height: 530px;
+      transform: translateX(-32%); }
+  /* line 634, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .login-form {
+    position: relative;
+    top: -80px;
+    z-index: 21;
+    display: none; }
+    /* line 640, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .login-form form {
+      height: 200%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 20px;
+      background-color: #FFB334; }
+      /* line 648, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .login .login-form form p {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #4a4d52;
+        margin-bottom: 10px; }
+      /* line 656, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .login .login-form form .inputs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px; }
+        /* line 661, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .login .login-form form .inputs input {
+          width: 48%;
+          height: 25px;
+          border: 0;
+          padding: 5px 8px;
+          font-family: Louis-Regular;
+          font-size: 0.9em; }
+      /* line 671, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .login .login-form form .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        /* line 676, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .login .login-form form .buttons a {
+          color: #4a4d52;
+          font-family: Louis-Regular;
+          text-decoration: none;
+          position: relative; }
+        /* line 683, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .login .login-form form .buttons a:after {
+          content: '';
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          margin: auto;
+          width: 0%;
+          border-bottom: 1px solid #4a4d52;
+          transition: 0.4s ease; }
+        /* line 694, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .login .login-form form .buttons a:hover:after {
+          width: 100%; }
+        /* line 698, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .login .login-form form .buttons button {
+          width: 48%;
+          border: 0;
+          background-color: #4a4d52;
+          padding: 5px 0;
+          color: #FFFFFF;
+          text-transform: capitalize;
+          font-family: Louis-Regular;
+          cursor: pointer;
+          position: relative; }
+        /* line 710, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .login .login-form form .buttons button:before {
+          position: absolute;
+          content: '';
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0; }
+  /* line 723, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .botao-servicos img {
+    width: 90%;
+    margin-bottom: 15px; }
+  /* line 729, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .servicos-pecas {
+    text-align: right; }
+    /* line 732, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .servicos-pecas img {
+      width: 95%; }
+  /* line 737, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .visa {
+    text-align: right; }
+    /* line 739, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .visa img {
+      width: 100%;
+      margin-top: 25px; }
+  /* line 745, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .cadastro-form {
+    padding: 20px 30px;
+    background: linear-gradient(rgba(74, 77, 82, 0.9), rgba(74, 77, 82, 0.9), rgba(74, 77, 82, 0));
+    position: relative;
+    margin-top: 62px; }
+    /* line 751, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .cadastro-form p {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 2.7em;
+      line-height: 0.9em; }
+    /* line 758, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .cadastro-form p:first-child {
+      text-transform: uppercase;
+      color: #FFB334;
+      margin: 15px 0 0 10px; }
+    /* line 763, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .cadastro-form p:nth-child(2) {
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin: 0 0 30px 70px; }
+    /* line 768, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .cadastro-form p span {
+      font-size: 0.65em;
+      line-height: 0.9em;
+      vertical-align: top; }
+    /* line 774, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .cadastro-form input, .login .cadastro-form button {
+      width: 100%;
+      border: 0;
+      margin-bottom: 10px;
+      font-family: Louis-Regular;
+      padding: 8px 10px;
+      font-size: 0.9em; }
+    /* line 783, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .cadastro-form button {
+      font-family: Louis-Regular;
+      color: #FFFFFF;
+      font-size: 1.5em;
+      background: linear-gradient(to bottom, #ffc334 50%, #ffb334 50%);
+      padding: 7px 0;
+      margin-top: 15px;
+      position: relative;
+      cursor: pointer; }
+    /* line 793, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .cadastro-form button:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0; }
+  /* line 803, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .texto-chamada {
+    display: flex;
+    justify-content: center; }
+    /* line 807, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .texto-chamada .infos {
+      font-family: Louis-BoldItalic;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      width: 100%;
+      display: inline-block;
+      line-height: 1.2em;
+      margin: 20px 0; }
+      /* line 816, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .login .texto-chamada .infos p {
+        margin: 0; }
+      /* line 820, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .login .texto-chamada .infos p:first-child {
+        color: #686868;
+        text-align: left; }
+      /* line 824, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .login .texto-chamada .infos p:last-child {
+        text-align: right; }
+
+/* line 831, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.como-participar {
+  padding-top: 58px;
+  margin-bottom: 50px; }
+  /* line 835, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar .title {
+    position: relative;
+    display: inline-block;
+    background: #4a4d52;
+    padding: 15px 40px;
+    transform: skewX(-30deg);
+    margin-left: 80px; }
+    /* line 843, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .como-participar .title p {
+      font-family: Louis-BoldItalic;
+      font-size: 2.5em;
+      line-height: 1;
+      text-transform: uppercase;
+      transform: skewX(30deg);
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      margin: 0; }
+  /* line 854, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar .title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -16px;
+    bottom: 0;
+    background: #FFB334;
+    width: 8px; }
+  /* line 864, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar .mecanico {
+    margin-top: 30px; }
+    /* line 866, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .como-participar .mecanico img {
+      width: 300px;
+      margin-left: 60px; }
+  /* line 872, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar .passos {
+    margin-top: 100px; }
+    /* line 874, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .como-participar .passos img {
+      height: 450px;
+      margin-left: 60px; }
+
+/* line 881, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.premios:after {
+  content: '';
+  position: absolute;
+  top: -150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/bg-premios.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  z-index: -1; }
+
+/* line 895, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.premios {
+  position: relative;
+  z-index: 2;
+  padding-top: 85px; }
+  /* line 900, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .title-row {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 35px; }
+  /* line 906, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .chamada {
+    width: 500px; }
+    /* line 908, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .premios .chamada span {
+      font-family: Louis-Bold; }
+  /* line 913, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .title {
+    position: relative;
+    display: inline-block;
+    background: #FFFFFF;
+    padding: 15px 40px;
+    transform: skewX(-30deg);
+    margin-left: 80px;
+    z-index: 1; }
+    /* line 922, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .premios .title p {
+      font-family: Louis-BoldItalic;
+      font-size: 2.5em;
+      line-height: 1;
+      text-transform: uppercase;
+      transform: skewX(30deg);
+      color: #4a4d52;
+      letter-spacing: 1px;
+      margin: 0; }
+  /* line 933, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -16px;
+    bottom: 0;
+    background: #FFB334;
+    width: 8px; }
+  /* line 943, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .premios-img {
+    display: flex;
+    justify-content: center; }
+    /* line 947, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .premios .premios-img img {
+      width: 100%;
+      height: 100%; }
+  /* line 953, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .premios-row {
+    display: none; }
+  /* line 957, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios p {
+    color: #fff;
+    font-size: 1em;
+    font-family: Louis-Regular;
+    line-height: 1.4em; }
+
+/* line 965, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.sortudos {
+  padding-top: 58px;
+  padding-bottom: 50px; }
+  /* line 968, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .title {
+    position: relative;
+    display: inline-block;
+    background: #4a4d52;
+    padding: 15px 40px;
+    transform: skewX(-30deg);
+    margin-left: 80px;
+    margin-bottom: 50px; }
+    /* line 977, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .title p {
+      font-family: Louis-BoldItalic;
+      font-size: 2.5em;
+      line-height: 1;
+      text-transform: uppercase;
+      transform: skewX(30deg);
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      margin: 0; }
+  /* line 989, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -16px;
+    bottom: 0;
+    background: #FFB334;
+    width: 8px; }
+  /* line 999, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .destaque-row {
+    margin-bottom: 50px; }
+  /* line 1003, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .sortudo-destaque {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 270px; }
+    /* line 1009, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-destaque .sortudo-img {
+      display: inline-block;
+      position: relative;
+      overflow: visible; }
+      /* line 1014, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .sortudos .sortudo-destaque .sortudo-img img {
+        border-radius: 50%;
+        position: relative;
+        z-index: 3;
+        width: 150px; }
+    /* line 1022, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-destaque .sortudo-img:before {
+      content: '';
+      position: absolute;
+      top: -22px;
+      bottom: -10px;
+      left: -13px;
+      right: -10px;
+      background-image: url("../images/border-image.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 4; }
+    /* line 1040, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-destaque .destaque-infos {
+      background-color: #4a4d52;
+      display: inline-block;
+      padding: 15px 40px;
+      transform: skewX(-30deg);
+      width: 630px;
+      padding-left: 100px;
+      position: absolute;
+      left: 100px;
+      top: 30px; }
+      /* line 1052, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .sortudos .sortudo-destaque .destaque-infos p {
+        font-family: Louis-BoldItalic;
+        font-size: 1.8em;
+        line-height: 1.2;
+        color: #FFFFFF;
+        transform: skewX(30deg);
+        margin: 0;
+        text-transform: uppercase; }
+        /* line 1061, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .sortudos .sortudo-destaque .destaque-infos p span {
+          color: #FFB334;
+          margin-left: 30px; }
+      /* line 1067, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .sortudos .sortudo-destaque .destaque-infos #onix {
+        position: absolute;
+        z-index: 3;
+        height: 180px;
+        right: -43px;
+        top: -15px;
+        transform: skewX(30deg); }
+  /* line 1078, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .sortudo-single {
+    text-align: center; }
+    /* line 1081, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-single h3 {
+      text-transform: uppercase;
+      font-size: 2em;
+      color: #4a4d52;
+      font-family: Louis-BoldItalic; }
+    /* line 1087, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-single .sortudo-img {
+      display: inline-block;
+      position: relative;
+      margin: 20px 0;
+      overflow: visible; }
+      /* line 1093, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .sortudos .sortudo-single .sortudo-img img {
+        border-radius: 50%;
+        position: relative;
+        z-index: 3;
+        width: 150px; }
+    /* line 1100, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-single .sortudo-img:before {
+      content: '';
+      position: absolute;
+      top: -22px;
+      bottom: -10px;
+      left: -13px;
+      right: -10px;
+      background-image: url("../images/border-image.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 4; }
+    /* line 1112, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-single p {
+      margin: 0;
+      text-transform: uppercase;
+      font-family: Louis-BoldItalic;
+      font-size: 1.1em; }
+    /* line 1118, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-single .nome-sortudo {
+      color: #FFB334; }
+    /* line 1121, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .sortudos .sortudo-single .cidade-sortudo {
+      color: #4a4d52; }
+  /* line 1127, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .row-sortudos .slot {
+    margin-bottom: 20px; }
+  /* line 1130, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .row-sortudos .slot:nth-child(2n):after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    border-left: 1px solid #4a4d52; }
+
+/* line 1144, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.regulamento:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  transform-origin: left top;
+  transform: skewY(-2deg);
+  z-index: 0; }
+
+/* line 1157, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.regulamento:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  transform-origin: left top;
+  transform: skewY(2deg);
+  z-index: 0; }
+
+/* line 1170, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.regulamento {
+  padding-top: 158px;
+  padding-bottom: 170px;
+  background-image: url("../images/bg-regulamento.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  /* line 1178, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento .title {
+    position: relative;
+    display: inline-block;
+    background: #FFFFFF;
+    padding: 15px 40px;
+    transform: skewX(-30deg);
+    margin-left: 80px;
+    z-index: 1; }
+    /* line 1187, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .regulamento .title p {
+      font-family: Louis-BoldItalic;
+      font-size: 2.5em;
+      line-height: 1;
+      text-transform: uppercase;
+      transform: skewX(30deg);
+      color: #4a4d52;
+      letter-spacing: 1px;
+      margin: 0; }
+  /* line 1198, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento .title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -16px;
+    bottom: 0;
+    background: #FFB334;
+    width: 8px; }
+  /* line 1208, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento .mCustomScrollbar {
+    background-color: #FFFFFF;
+    padding: 30px; }
+    /* line 1212, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .regulamento .mCustomScrollbar .mCSB_scrollTools .mCSB_dragger {
+      background-image: url("../images/arrow_down.png");
+      background-position: 0 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 1; }
+    /* line 1220, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .regulamento .mCustomScrollbar .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+      background-color: transparent;
+      transition: none; }
+    /* line 1225, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .regulamento .mCustomScrollbar .mCSB_draggerRail {
+      background-color: #FFFFFF; }
+    /* line 1229, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .regulamento .mCustomScrollbar .mCSB_buttonUp {
+      background-image: url("../images/arrow.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 1; }
+    /* line 1235, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .regulamento .mCustomScrollbar .mCSB_buttonDown {
+      background-image: url("../images/arrow_down.png");
+      background-position: 0 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 1; }
+  /* line 1244, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento .col-scroll {
+    display: flex;
+    justify-content: center; }
+  /* line 1249, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento #content-4 {
+    width: 90%;
+    height: 550px;
+    overflow: auto;
+    margin-top: 50px;
+    font-family: Louis-Regular;
+    line-height: 1.4em;
+    font-size: 1em; }
+    /* line 1260, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .regulamento #content-4 ol {
+      counter-reset: section;
+      list-style-type: none;
+      padding-left: 0; }
+      /* line 1265, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .regulamento #content-4 ol li {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-weight: bold; }
+        /* line 1271, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .regulamento #content-4 ol li ol li {
+          font-weight: normal;
+          margin-top: 5px; }
+      /* line 1278, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .regulamento #content-4 ol p {
+        display: inline; }
+      /* line 1282, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .regulamento #content-4 ol table {
+        border-collapse: collapse;
+        font-weight: normal;
+        margin-top: 10px; }
+        /* line 1286, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .regulamento #content-4 ol table caption {
+          margin-bottom: 10px; }
+        /* line 1289, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .regulamento #content-4 ol table thead {
+          font-weight: bold; }
+        /* line 1292, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .regulamento #content-4 ol table tfoot {
+          font-weight: bold; }
+        /* line 1295, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        .regulamento #content-4 ol table td {
+          padding: 5px;
+          border: 1px solid #CCC; }
+    /* line 1303, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .regulamento #content-4 li:before {
+      counter-increment: section;
+      content: counters(section, ".") ". "; }
+
+/* line 1311, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+.faq {
+  background: #FFFFFF;
+  padding: 58px 0; }
+  /* line 1315, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .title {
+    position: relative;
+    display: inline-block;
+    background: #4a4d52;
+    padding: 15px 40px;
+    transform: skewX(-30deg);
+    margin-left: 80px;
+    margin-bottom: 40px;
+    z-index: 1; }
+    /* line 1325, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .title p {
+      font-family: Louis-BoldItalic;
+      font-size: 2.5em;
+      line-height: 1;
+      text-transform: uppercase;
+      transform: skewX(30deg);
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      margin: 0; }
+  /* line 1336, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -16px;
+    bottom: 0;
+    background: #FFB334;
+    width: 8px; }
+  /* line 1346, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .container-acordion {
+    width: 75%;
+    margin-left: 100px;
+    counter-reset: section;
+    /* Style the accordion panel. Note: hidden by default */ }
+    /* line 1351, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .container-acordion .panel {
+      margin-bottom: 5px;
+      border: none;
+      box-shadow: none; }
+      /* line 1355, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .faq .container-acordion .panel p {
+        font-family: Louis-Regular;
+        font-size: 1em;
+        line-height: 1.2em; }
+    /* line 1362, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .container-acordion button.accordion {
+      counter-increment: section;
+      background-color: #6c6e72;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      transform: skewX(-30deg);
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-family: Louis-Bold;
+      font-size: 1em;
+      position: relative; }
+      /* line 1382, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .faq .container-acordion button.accordion .numero {
+        width: 50px;
+        height: 100%;
+        background-color: #4a4d52;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-right: 3px solid #fff;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      /* line 1396, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .faq .container-acordion button.accordion .numero span {
+        transform: skewX(30deg);
+        margin: 0; }
+      /* line 1412, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .faq .container-acordion button.accordion span {
+        margin: 0;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-style: italic;
+        transform: skewX(30deg);
+        display: block;
+        margin-left: 55px; }
+    /* line 1425, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .container-acordion button.accordion:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -53px;
+      background-color: #FFB334;
+      width: 50px; }
+    /* line 1436, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .container-acordion button.accordion:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      right: -74px;
+      width: 50px;
+      background-image: url(../images/arrow-down-cinza.png);
+      background-repeat: no-repeat;
+      background-size: 30%;
+      transform: skewX(30deg) translateY(-25%);
+      z-index: 2; }
+    /* line 1450, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .container-acordion button.accordion.active:after {
+      background-color: #ff5534; }
+    /* line 1455, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .container-acordion button.accordion.active:before {
+      background-image: url(../images/arrow-up-branca.png);
+      top: 45%; }
+    /* line 1461, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .container-acordion div.panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: 0.4s; }
+    /* line 1471, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .faq .container-acordion div.panel.show {
+      opacity: 1;
+      max-height: 500px;
+      margin-top: 15px;
+      transition: 0.4s; }
+
+/* line 1482, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+footer {
+  background-color: #4a4d52;
+  padding: 30px 0; }
+  /* line 1486, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer .row-footer {
+    position: relative;
+    display: flex;
+    align-items: center; }
+    /* line 1491, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer .row-footer .redes-sociais {
+      padding-right: 50px; }
+      /* line 1493, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer .row-footer .redes-sociais > p {
+        text-transform: uppercase;
+        font-family: Louis-Italic;
+        margin-bottom: 10px;
+        font-size: 1em;
+        color: #FFFFFF; }
+      /* line 1501, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer .row-footer .redes-sociais .social-icon {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 50px;
+        border-bottom: 1px solid #fff;
+        margin-top: 15px;
+        padding-bottom: 20px; }
+        /* line 1509, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        footer .row-footer .redes-sociais .social-icon a {
+          color: #FFFFFF;
+          font-size: 2.5em;
+          line-height: 0;
+          margin-right: 20px; }
+    /* line 1520, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer .row-footer .contato-col {
+      border-left: 1px solid #FFF; }
+      /* line 1523, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer .row-footer .contato-col .contact {
+        padding: 0 25px; }
+        /* line 1526, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+        footer .row-footer .contato-col .contact form {
+          width: 100%;
+          min-height: 100%;
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap; }
+          /* line 1533, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+          footer .row-footer .contato-col .contact form input, footer .row-footer .contato-col .contact form textarea, footer .row-footer .contato-col .contact form button {
+            width: 100%;
+            border: none;
+            padding: 5px 10px;
+            margin-bottom: 8px;
+            font-family: Louis-Regular; }
+          /* line 1541, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+          footer .row-footer .contato-col .contact form textarea {
+            resize: none; }
+          /* line 1545, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+          footer .row-footer .contato-col .contact form button {
+            margin: 0;
+            text-transform: uppercase;
+            background-color: #FFB334;
+            font-family: Louis-Italic;
+            font-size: 1.1em;
+            color: #FFFFFF;
+            padding: 8px 0; }
+    /* line 1562, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer .row-footer .logo img {
+      width: 100px; }
+  /* line 1568, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer .infos {
+    margin-top: 20px; }
+    /* line 1570, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer .infos p, footer .infos h6 {
+      font-family: Louis-Regular;
+      font-size: 0.8em;
+      color: #FFFFFF;
+      line-height: 1.6em;
+      margin: 0;
+      letter-spacing: 0.03em; }
+    /* line 1578, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer .infos h6 {
+      font-family: Louis-Bold;
+      text-transform: uppercase; }
+
+/* line 1586, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+footer.page-on .contato-col {
+  padding-right: 100px;
+  border-left: none;
+  border-right: 1px solid #FFFFFF; }
+  /* line 1591, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer.page-on .contato-col .contact {
+    padding: 0; }
+    /* line 1594, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer.page-on .contato-col .contact p:first-child {
+      font-family: Louis-Italic;
+      color: #FFFFFF;
+      text-transform: uppercase; }
+    /* line 1600, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer.page-on .contato-col .contact form {
+      width: 100%;
+      min-height: 100%;
+      height: 100%;
+      display: flex; }
+      /* line 1606, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer.page-on .contato-col .contact form input, footer.page-on .contato-col .contact form textarea, footer.page-on .contato-col .contact form button {
+        border: none;
+        padding: 5px 10px;
+        margin-bottom: 0px;
+        font-family: Louis-Regular; }
+      /* line 1613, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer.page-on .contato-col .contact form input[name=email] {
+        margin: 10px 0; }
+      /* line 1617, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer.page-on .contato-col .contact form div {
+        margin: 0 -5px; }
+      /* line 1621, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer.page-on .contato-col .contact form div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        margin: 0 -15px; }
+      /* line 1630, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer.page-on .contato-col .contact form div:last-child {
+        margin: 0 -15px; }
+      /* line 1634, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer.page-on .contato-col .contact form textarea {
+        resize: none;
+        height: 100%; }
+      /* line 1639, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer.page-on .contato-col .contact form button {
+        margin: 0;
+        text-transform: uppercase;
+        background-color: #FFB334;
+        font-family: Louis-Italic;
+        font-size: 1.1em;
+        color: #FFFFFF;
+        padding: 8px 0;
+        height: 100%; }
+
+/* line 1654, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+footer.page-on .infos {
+  margin-top: 20px;
+  padding-right: 60px; }
+  /* line 1657, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer.page-on .infos p, footer.page-on .infos h6 {
+    font-family: Louis-Regular;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    line-height: 1.6em;
+    margin: 0;
+    letter-spacing: 0.03em; }
+  /* line 1665, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer.page-on .infos h6 {
+    font-family: Louis-Bold;
+    text-transform: uppercase; }
+
+/* line 1670, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+footer.page-on .logo {
+  padding-left: 110px; }
+  /* line 1672, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer.page-on .logo img {
+    width: 90%; }
+
+/* line 5, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+.cupom-sucesso .imprimir {
+  float: right;
+  display: inline;
+  background-color: #FFB334;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  transform: skewX(-20deg);
+  margin-bottom: 20px;
+  margin-right: 10px; }
+  @media (max-width: 600px) {
+    /* line 5, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .imprimir {
+      transform: skewX(-5deg); } }
+  /* line 12, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+  .cupom-sucesso .imprimir i {
+    transform: skewX(20deg);
+    margin: 5px 10px; }
+    @media (max-width: 600px) {
+      /* line 12, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+      .cupom-sucesso .imprimir i {
+        transform: skewX(5deg); } }
+
+/* line 18, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+.cupom-sucesso .numeros-cupons {
+  background-color: #FFFFFF;
+  color: #FFB334;
+  font-size: 1.8em;
+  transform: skewX(-20deg);
+  clear: right;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 80px;
+  position: relative;
+  margin-bottom: 20px; }
+  @media (max-width: 600px) {
+    /* line 18, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .numeros-cupons {
+      transform: skewX(-5deg); } }
+  @media screen and (max-width: 1200px) {
+    /* line 18, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .numeros-cupons {
+      font-size: 1.2em; } }
+  @media screen and (max-width: 992px) {
+    /* line 18, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .numeros-cupons {
+      font-size: 1.6em; } }
+  @media screen and (max-width: 650px) {
+    /* line 18, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .numeros-cupons {
+      font-size: 1.2em;
+      padding: 20px; } }
+  /* line 38, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+  .cupom-sucesso .numeros-cupons table {
+    transform: skewX(20deg);
+    width: 100%;
+    text-align: center;
+    font-family: Louis-Bold; }
+    @media (max-width: 600px) {
+      /* line 38, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+      .cupom-sucesso .numeros-cupons table {
+        transform: skewX(5deg); } }
+    /* line 44, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .numeros-cupons table td:nth-child(2n+1) {
+      padding-right: 25px; }
+
+/* line 49, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+.cupom-sucesso .numeros-cupons::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  border: 1px solid;
+  border-color: #FFFFFF; }
+
+/* line 52, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+.cupom-sucesso .row-credito {
+  display: flex;
+  margin-bottom: 25px; }
+  @media (max-width: 1200px) {
+    /* line 52, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .row-credito {
+      flex-direction: column;
+      justify-content: center; } }
+  /* line 59, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+  .cupom-sucesso .row-credito .col-info {
+    display: flex;
+    align-items: center;
+    margin-left: -15px;
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    font-size: 1.1em; }
+    @media (max-width: 1200px) {
+      /* line 59, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+      .cupom-sucesso .row-credito .col-info {
+        justify-content: center; }
+        /* line 68, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+        .cupom-sucesso .row-credito .col-info p {
+          text-align: center; } }
+    /* line 73, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .row-credito .col-info strong {
+      font-weight: normal;
+      font-family: Louis-BoldItalic;
+      color: #FFB334; }
+
+/* line 82, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+.cupom-sucesso .cupom-credito {
+  background-color: #FFFFFF;
+  color: #FFB334;
+  font-size: 1em;
+  transform: skewX(-20deg);
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px 40px 10px 25px; }
+  @media (max-width: 600px) {
+    /* line 82, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .cupom-credito {
+      transform: skewX(-5deg); } }
+  /* line 88, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+  .cupom-sucesso .cupom-credito h4, .cupom-sucesso .cupom-credito p {
+    transform: skewX(20deg); }
+    @media (max-width: 600px) {
+      /* line 88, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+      .cupom-sucesso .cupom-credito h4, .cupom-sucesso .cupom-credito p {
+        transform: skewX(5deg); } }
+  /* line 92, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+  .cupom-sucesso .cupom-credito h4 {
+    font-size: 1.5em;
+    font-family: Louis-BoldItalic;
+    text-transform: uppercase;
+    color: #4a4d52;
+    text-align: center; }
+  /* line 99, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+  .cupom-sucesso .cupom-credito p {
+    text-transform: uppercase;
+    font-family: Louis-BoldItalic;
+    font-size: 1.5em;
+    display: flex;
+    align-items: flex-start; }
+    @media (max-width: 1200px) {
+      /* line 99, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+      .cupom-sucesso .cupom-credito p {
+        justify-content: center; } }
+    /* line 110, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .cupom-credito p .moeda {
+      align-self: flex-end; }
+    /* line 113, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .cupom-credito p .reais {
+      font-size: 3em;
+      margin: 0 10px;
+      line-height: 1; }
+
+/* line 121, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+.cupom-sucesso .cupom-credito::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  bottom: -7px;
+  right: -7px;
+  border: 1px solid;
+  border-color: #FFFFFF; }
+
+/* line 125, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+.cupom-sucesso .btn-cadastrar {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Louis;
+  font-size: 1.4em;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #ffc334 50%, #ffb334 50%);
+  border: 1px solid #ffda80; }
+  @media screen and (max-width: 992px) {
+    /* line 125, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+    .cupom-sucesso .btn-cadastrar {
+      margin-bottom: 20px; } }
+
+/* line 131, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-sucesso.scss */
+.cupom-sucesso .btn-finalizar {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Louis;
+  font-size: 1.4em;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #5d5f63 50%, #4a4d52 50%);
+  border: 1px solid #82858a; }
+
+/* line 4, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+.nf-menos-200 .sucesso {
+  font-size: 3em; }
+
+/* line 7, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+.nf-menos-200 .destaque {
+  color: #FFB334; }
+
+/* line 10, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+.nf-menos-200 .cupom-credito {
+  background-color: #FFFFFF;
+  color: #FFB334;
+  font-size: 1em;
+  transform: skewX(-20deg);
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px 40px 10px 25px; }
+  @media (max-width: 600px) {
+    /* line 10, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+    .nf-menos-200 .cupom-credito {
+      transform: skewX(-5deg); } }
+  /* line 16, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+  .nf-menos-200 .cupom-credito h4, .nf-menos-200 .cupom-credito p {
+    transform: skewX(20deg); }
+    @media (max-width: 600px) {
+      /* line 16, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+      .nf-menos-200 .cupom-credito h4, .nf-menos-200 .cupom-credito p {
+        transform: skewX(5deg); } }
+  /* line 20, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+  .nf-menos-200 .cupom-credito h4 {
+    font-size: 1.8em;
+    font-family: Louis-BoldItalic;
+    text-transform: uppercase;
+    color: #4a4d52;
+    text-align: center; }
+    @media (min-width: 600px) {
+      /* line 20, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+      .nf-menos-200 .cupom-credito h4 {
+        font-size: 3em; } }
+  /* line 30, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+  .nf-menos-200 .cupom-credito p {
+    text-transform: uppercase;
+    font-family: Louis-BoldItalic;
+    font-size: 1.5em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; }
+    @media (min-width: 600px) {
+      /* line 30, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+      .nf-menos-200 .cupom-credito p {
+        font-size: 2em; } }
+    /* line 41, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+    .nf-menos-200 .cupom-credito p .moeda {
+      align-self: flex-end; }
+    /* line 44, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+    .nf-menos-200 .cupom-credito p .reais {
+      font-size: 2em;
+      margin: 0 10px;
+      line-height: 1; }
+      @media (min-width: 600px) {
+        /* line 44, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+        .nf-menos-200 .cupom-credito p .reais {
+          font-size: 3em; } }
+
+/* line 54, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+.nf-menos-200 .cupom-credito::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  bottom: -7px;
+  right: -7px;
+  border: 1px solid;
+  border-color: #FFFFFF; }
+
+/* line 57, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+.nf-menos-200 .chamada {
+  font-family: Louis-Italic;
+  font-size: 1.6em;
+  margin: 30px 20px;
+  text-align: center; }
+  @media (min-width: 715px) {
+    /* line 57, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+    .nf-menos-200 .chamada {
+      font-size: 2em; } }
+
+/* line 67, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_nf-menos-200.scss */
+.nf-menos-200 .btn-cadastrar {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Louis;
+  font-size: 1.4em;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #ffc334 50%, #ffb334 50%);
+  border: 1px solid #ffda80;
+  margin-top: 30px; }
+
+/* line 4, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-extra.scss */
+.cupom-extra h3.sucesso {
+  margin-bottom: 70px; }
+
+/* line 7, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-extra.scss */
+.cupom-extra .cupom-numero {
+  transform: skewX(20deg);
+  font-size: 2em;
+  font-family: Louis-BoldItalic;
+  text-align: center;
+  margin: 0; }
+  @media (max-width: 600px) {
+    /* line 7, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-extra.scss */
+    .cupom-extra .cupom-numero {
+      transform: skewX(5deg); } }
+
+/* line 14, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-extra.scss */
+.cupom-extra .numeros-cupons {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+/* line 18, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-extra.scss */
+.cupom-extra .btn-finalizar {
+  margin-top: 80px; }
+
+/* line 1, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-10.scss */
+#btn-responda {
+  margin-top: 80px; }
+
+/* line 6, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-10.scss */
+.cupom-10 h3 {
+  margin-top: 90px; }
+
+/* line 4, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form h3 {
+  font-size: 3.5em !important;
+  margin-top: 50px !important;
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 20px; }
+
+/* line 11, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form .subtitle {
+  font-family: Louis-Italic;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px; }
+  /* line 19, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+  .cupom-form .subtitle span {
+    color: #FFB334; }
+
+/* line 24, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form legend {
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #FFFFFF;
+  border-bottom: none;
+  font-family: Louis-Italic;
+  text-transform: uppercase; }
+
+/* line 34, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form input[type=radio] {
+  display: none; }
+
+/* line 41, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #motivo-visita,
+.cupom-form #proxima-visita,
+.cupom-form #distancia,
+.cupom-form #preferencia {
+  margin-bottom: 30px; }
+
+/* line 46, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #motivo-visita label {
+  display: block;
+  width: auto;
+  cursor: pointer;
+  position: relative; }
+
+/* line 52, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #motivo-visita label::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  position: relative;
+  margin-right: 5px;
+  top: 2px; }
+
+/* line 63, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #motivo-visita input[type=radio]:checked + label::before {
+  background: #FFB334;
+  border: 3px solid #FFFFFF; }
+
+/* line 70, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #proxima-visita label {
+  display: inline-block;
+  width: 49%;
+  cursor: pointer;
+  position: relative; }
+
+/* line 76, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #proxima-visita label::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  position: relative;
+  margin-left: 5px;
+  top: 2px; }
+
+/* line 87, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #proxima-visita input[type=radio]:checked + label::after {
+  background: #FFB334;
+  border: 3px solid #FFFFFF; }
+
+/* line 91, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #proxima-visita textarea {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: Louis-Regular;
+  border: none;
+  resize: none;
+  padding: 10px;
+  margin-top: 15px;
+  color: #4a4d52; }
+
+/* line 104, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input {
+  margin-top: 10px;
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent; }
+
+/* line 110, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #4a4d52;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #FFB334;
+  cursor: pointer;
+  margin-top: -5px; }
+
+/* line 120, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-moz-range-thumb {
+  border: 2px solid #4a4d52;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #FFB334;
+  cursor: pointer; }
+
+/* line 129, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-ms-thumb {
+  border: 2px solid #4a4d52;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #FFB334;
+  cursor: pointer;
+  margin-top: 0px; }
+
+/* line 138, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input:focus {
+  outline: none; }
+
+/* line 141, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+/* line 148, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #FFFFFF;
+  border-radius: 8px; }
+
+/* line 155, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input:focus::-webkit-slider-runnable-track {
+  background: #FFFFFF; }
+
+/* line 158, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: #FFFFFF;
+  border-radius: 8px; }
+
+/* line 165, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+/* line 174, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-ms-fill-lower {
+  background: #FFFFFF;
+  border-radius: 8px; }
+
+/* line 178, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input:focus::-ms-fill-lower {
+  background: #CCC; }
+
+/* line 181, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input::-ms-fill-upper {
+  background: #FFFFFF;
+  border-radius: 8px; }
+
+/* line 185, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia input:focus::-ms-fill-upper {
+  background: #FFFFFF; }
+
+/* line 188, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #distancia output {
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Louis-Italic; }
+
+/* line 197, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #preferencia label {
+  display: inline-block;
+  width: 40%;
+  cursor: pointer;
+  position: relative;
+  vertical-align: top; }
+
+/* line 204, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #preferencia label[for=telefone] {
+  margin-left: 14px; }
+
+/* line 207, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #preferencia label::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  position: relative;
+  margin-right: 5px;
+  margin-left: -14px;
+  top: 2px; }
+
+/* line 219, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form #preferencia input[type=radio]:checked + label::before {
+  background: #FFB334;
+  border: 3px solid #FFFFFF; }
+
+/* line 225, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form .btn-amarelo, .cupom-form .btn-cinza {
+  margin-bottom: 20px; }
+
+/* line 229, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form .btn-amarelo {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Louis;
+  font-size: 1.4em;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #ffc334 50%, #ffb334 50%);
+  border: 1px solid #ffda80; }
+
+/* line 232, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-form.scss */
+.cupom-form .btn-cinza {
+  width: 100%;
+  display: block;
+  padding: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Louis;
+  font-size: 1.4em;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #5d5f63 50%, #4a4d52 50%);
+  border: 1px solid #82858a; }
+
+/* line 2, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+.cupom-mensagem-parabens h3 {
+  font-size: 3.5em !important;
+  margin-top: 150px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  @media (max-width: 1200px) {
+    /* line 2, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h3 {
+      font-size: 3em !important; } }
+  @media (max-width: 992px) {
+    /* line 2, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h3 {
+      font-size: 3.5em !important; } }
+  @media (max-width: 640px) {
+    /* line 2, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h3 {
+      font-size: 2.5em !important; } }
+  @media (max-width: 470px) {
+    /* line 2, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h3 {
+      font-size: 1.5em !important; } }
+  /* line 23, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+  .cupom-mensagem-parabens h3 p {
+    margin: 0; }
+  /* line 26, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+  .cupom-mensagem-parabens h3 p:first-child {
+    color: #FFB334; }
+  /* line 29, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+  .cupom-mensagem-parabens h3 p:nth-child(2n+2) {
+    text-align: right; }
+  /* line 32, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+  .cupom-mensagem-parabens h3 p:nth-child(2n+1) {
+    text-align: left; }
+
+/* line 37, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+.cupom-mensagem-parabens h3::before {
+  content: '';
+  position: absolute;
+  top: -90px;
+  right: 75px;
+  width: 108px;
+  height: 111px;
+  background: url(../images/icon-festa-01.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
+  @media (max-width: 1200px) {
+    /* line 37, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h3::before {
+      right: 45px; } }
+  @media (max-width: 992px) {
+    /* line 37, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h3::before {
+      right: 75px; } }
+  @media (max-width: 640px) {
+    /* line 37, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h3::before {
+      right: 50px;
+      width: 90px;
+      height: 100px; } }
+  @media (max-width: 470px) {
+    /* line 37, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h3::before {
+      right: 25px;
+      top: -45px;
+      width: 50px;
+      height: 60px; } }
+
+/* line 70, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+.cupom-mensagem-parabens h4 {
+  font-family: Louis-Italic;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 200px; }
+  @media (max-width: 1200px) {
+    /* line 70, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h4 {
+      font-size: 2em !important; } }
+  @media (max-width: 992px) {
+    /* line 70, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h4 {
+      font-size: 2.5em !important; } }
+  @media (max-width: 640px) {
+    /* line 70, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h4 {
+      font-size: 1.5em !important; } }
+  @media (max-width: 470px) {
+    /* line 70, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+    .cupom-mensagem-parabens h4 {
+      font-size: 1em !important; } }
+  /* line 90, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+  .cupom-mensagem-parabens h4 span {
+    color: #FFB334; }
+
+/* line 96, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_cupom-mensagem-parabens.scss */
+.nota-fiscal .container-cadastro {
+  background-image: -webkit-linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0));
+  background-image: -o-linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0));
+  background-image: linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0)); }
+
+/* line 3, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+#sem-cupons {
+  margin-top: 50px; }
+  /* line 5, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .skewTitle {
+    background-color: #FFFFFF;
+    color: #4a4d52;
+    font-size: 1.2em;
+    transform: skewX(-20deg);
+    font-family: Louis-BoldItalic;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 30px 35px;
+    position: relative;
+    margin-bottom: 40px; }
+    @media (max-width: 600px) {
+      /* line 5, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .skewTitle {
+        transform: skewX(-5deg); } }
+    /* line 14, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .skewTitle h2 {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 0; }
+      @media (max-width: 600px) {
+        /* line 14, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+        #sem-cupons .skewTitle h2 {
+          transform: skewX(5deg); } }
+  /* line 20, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .skewTitle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -8px;
+    width: 5px;
+    background: #FFB334;
+    margin-left: 3px; }
+  /* line 31, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .col-infos-cupons {
+    position: relative;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; }
+    @media (max-width: 768px) {
+      /* line 31, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .col-infos-cupons {
+        flex-direction: column;
+        align-items: center;
+        height: 100%; } }
+  /* line 47, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .esta-concorrendo,
+  #sem-cupons .qtd-cupons,
+  #sem-cupons .credito,
+  #sem-cupons .observacoes {
+    height: 100%;
+    margin-right: 5px;
+    display: flex;
+    align-items: center; }
+    @media (max-width: 768px) {
+      /* line 47, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .esta-concorrendo,
+      #sem-cupons .qtd-cupons,
+      #sem-cupons .credito,
+      #sem-cupons .observacoes {
+        margin-bottom: 20px;
+        width: 90%; } }
+  /* line 58, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .esta-concorrendo {
+    background-color: #FFB334;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    transform: skewX(-20deg);
+    font-family: Louis-BoldItalic;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; }
+    @media (max-width: 600px) {
+      /* line 58, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .esta-concorrendo {
+        transform: skewX(-5deg); } }
+    @media (max-width: 768px) {
+      /* line 58, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .esta-concorrendo {
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
+    /* line 73, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .esta-concorrendo p {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 1.2;
+      text-align: right; }
+      @media (max-width: 600px) {
+        /* line 73, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+        #sem-cupons .esta-concorrendo p {
+          transform: skewX(5deg); } }
+      /* line 78, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .esta-concorrendo p span {
+        color: #4a4d52; }
+  /* line 84, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .qtd-cupons {
+    background-color: #FFFFFF;
+    color: #4a4d52;
+    font-size: 1em;
+    transform: skewX(-20deg);
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    position: relative;
+    margin-right: 15px; }
+    @media (max-width: 600px) {
+      /* line 84, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .qtd-cupons {
+        transform: skewX(-5deg); } }
+    @media (max-width: 768px) {
+      /* line 84, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .qtd-cupons {
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
+    /* line 96, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .qtd-cupons p {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 1;
+      text-align: center; }
+      @media (max-width: 600px) {
+        /* line 96, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+        #sem-cupons .qtd-cupons p {
+          transform: skewX(5deg); } }
+      /* line 101, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .qtd-cupons p span {
+        font-family: Louis-BoldItalic;
+        font-size: 3em; }
+  /* line 107, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .qtd-cupons::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -8px;
+    width: 5px;
+    background: #4a4d52;
+    margin-left: 3px; }
+  /* line 118, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .credito {
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative; }
+    @media (max-width: 768px) {
+      /* line 118, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .credito {
+        margin-top: 20px; } }
+    /* line 127, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .credito .txt-credito {
+      position: absolute;
+      top: -12px;
+      left: 30px;
+      font-size: 1.5em;
+      font-family: Louis-BoldItalic; }
+      /* line 133, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .credito .txt-credito p {
+        margin: 0;
+        line-height: 0;
+        color: #4a4d52; }
+    /* line 140, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .credito .valor-credito {
+      background-color: #4a4d52;
+      color: #FFFFFF;
+      font-size: 1em;
+      transform: skewX(-20deg);
+      display: flex;
+      align-items: center;
+      padding: 5px 20px;
+      position: relative;
+      height: 100%; }
+      @media (max-width: 600px) {
+        /* line 140, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+        #sem-cupons .credito .valor-credito {
+          transform: skewX(-5deg); } }
+      @media (max-width: 768px) {
+        /* line 140, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+        #sem-cupons .credito .valor-credito {
+          width: 100%;
+          justify-content: center;
+          padding-top: 20px;
+          padding-bottom: 20px; } }
+      /* line 153, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .credito .valor-credito p {
+        transform: skewX(20deg);
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.5em; }
+        @media (max-width: 600px) {
+          /* line 153, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+          #sem-cupons .credito .valor-credito p {
+            transform: skewX(5deg); } }
+        /* line 161, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+        #sem-cupons .credito .valor-credito p .moeda {
+          align-self: flex-end; }
+        /* line 164, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+        #sem-cupons .credito .valor-credito p .reais {
+          font-size: 2.5em;
+          margin: 0 5px;
+          line-height: 0.9; }
+    /* line 171, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .credito .valor-credito::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -8px;
+      width: 5px;
+      background: #FFB334;
+      margin-left: 3px; }
+  /* line 183, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .observacoes {
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    color: #4a4d52;
+    font-size: 0.85em;
+    margin-left: 20px;
+    width: 19%; }
+    @media (max-width: 768px) {
+      /* line 183, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .observacoes {
+        width: 90%;
+        justify-content: center;
+        margin: 0; } }
+    /* line 195, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .observacoes p {
+      margin: 0; }
+  /* line 200, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .col-carros {
+    text-align: center; }
+    /* line 202, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .col-carros img {
+      width: 70%; }
+  /* line 207, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .row-botoes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; }
+  /* line 213, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+  #sem-cupons .botoes {
+    display: flex;
+    align-items: center;
+    width: 75%; }
+    @media (max-width: 768px) {
+      /* line 213, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+      #sem-cupons .botoes {
+        flex-direction: column; } }
+    /* line 220, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_sem-cupons.scss */
+    #sem-cupons .botoes img {
+      width: 100%; }
+
+/* line 3, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+#com-cupons {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  /* line 6, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .skewTitle {
+    background-color: #FFFFFF;
+    color: #4a4d52;
+    font-size: 1.2em;
+    transform: skewX(-20deg);
+    font-family: Louis-BoldItalic;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 30px 35px;
+    position: relative;
+    margin-bottom: 40px; }
+    @media (max-width: 600px) {
+      /* line 6, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .skewTitle {
+        transform: skewX(-5deg); } }
+    /* line 15, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .skewTitle h2 {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 0; }
+      @media (max-width: 600px) {
+        /* line 15, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .skewTitle h2 {
+          transform: skewX(5deg); } }
+  /* line 21, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .skewTitle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -8px;
+    width: 5px;
+    background: #FFB334;
+    margin-left: 3px; }
+  /* line 32, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .col-infos-cupons {
+    position: relative;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; }
+    @media (max-width: 768px) {
+      /* line 32, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-infos-cupons {
+        flex-direction: column;
+        align-items: center;
+        height: 100%; } }
+  /* line 48, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .esta-concorrendo,
+  #com-cupons .qtd-cupons,
+  #com-cupons .credito,
+  #com-cupons .observacoes {
+    height: 100%;
+    margin-right: 5px;
+    display: flex;
+    align-items: center; }
+    @media (max-width: 768px) {
+      /* line 48, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .esta-concorrendo,
+      #com-cupons .qtd-cupons,
+      #com-cupons .credito,
+      #com-cupons .observacoes {
+        margin-bottom: 20px;
+        width: 90%; } }
+  /* line 59, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .esta-concorrendo {
+    background-color: #FFB334;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    transform: skewX(-20deg);
+    font-family: Louis-BoldItalic;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; }
+    @media (max-width: 600px) {
+      /* line 59, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .esta-concorrendo {
+        transform: skewX(-5deg); } }
+    @media (max-width: 768px) {
+      /* line 59, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .esta-concorrendo {
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
+    /* line 74, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .esta-concorrendo p {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 1.2;
+      text-align: right; }
+      @media (max-width: 600px) {
+        /* line 74, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .esta-concorrendo p {
+          transform: skewX(5deg); } }
+      /* line 79, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .esta-concorrendo p span {
+        color: #4a4d52; }
+  /* line 85, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .qtd-cupons {
+    background-color: #FFFFFF;
+    color: #4a4d52;
+    font-size: 1em;
+    transform: skewX(-20deg);
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    position: relative;
+    margin-right: 15px; }
+    @media (max-width: 600px) {
+      /* line 85, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .qtd-cupons {
+        transform: skewX(-5deg); } }
+    @media (max-width: 768px) {
+      /* line 85, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .qtd-cupons {
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
+    /* line 97, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .qtd-cupons p {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 1;
+      text-align: center; }
+      @media (max-width: 600px) {
+        /* line 97, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .qtd-cupons p {
+          transform: skewX(5deg); } }
+      /* line 102, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .qtd-cupons p span {
+        font-family: Louis-BoldItalic;
+        font-size: 3em; }
+  /* line 108, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .qtd-cupons::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -8px;
+    width: 5px;
+    background: #4a4d52;
+    margin-left: 3px; }
+  /* line 119, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .credito {
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative; }
+    @media (max-width: 768px) {
+      /* line 119, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .credito {
+        margin-top: 20px; } }
+    /* line 128, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .credito .txt-credito {
+      position: absolute;
+      top: -12px;
+      left: 30px;
+      font-size: 1.5em;
+      font-family: Louis-BoldItalic; }
+      /* line 134, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .credito .txt-credito p {
+        margin: 0;
+        line-height: 0;
+        color: #4a4d52; }
+    /* line 141, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .credito .valor-credito {
+      background-color: #4a4d52;
+      color: #FFFFFF;
+      font-size: 1em;
+      transform: skewX(-20deg);
+      display: flex;
+      align-items: center;
+      padding: 5px 20px;
+      position: relative;
+      height: 100%; }
+      @media (max-width: 600px) {
+        /* line 141, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .credito .valor-credito {
+          transform: skewX(-5deg); } }
+      @media (max-width: 768px) {
+        /* line 141, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .credito .valor-credito {
+          width: 100%;
+          justify-content: center;
+          padding-top: 20px;
+          padding-bottom: 20px; } }
+      /* line 154, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .credito .valor-credito p {
+        transform: skewX(20deg);
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.5em; }
+        @media (max-width: 600px) {
+          /* line 154, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+          #com-cupons .credito .valor-credito p {
+            transform: skewX(5deg); } }
+        /* line 162, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .credito .valor-credito p .moeda {
+          align-self: flex-end; }
+        /* line 165, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .credito .valor-credito p .reais {
+          font-size: 2.5em;
+          margin: 0 5px;
+          line-height: 0.9; }
+    /* line 172, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .credito .valor-credito::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -8px;
+      width: 5px;
+      background: #FFB334;
+      margin-left: 3px; }
+  /* line 184, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .observacoes {
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    color: #4a4d52;
+    font-size: 0.85em;
+    margin-left: 20px;
+    width: 19%; }
+    @media (max-width: 768px) {
+      /* line 184, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .observacoes {
+        width: 90%;
+        justify-content: center;
+        margin: 0; } }
+    /* line 196, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .observacoes p {
+      margin: 0; }
+  /* line 203, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .col-tabela,
+  #com-cupons .col-meus-numeros,
+  #com-cupons .col-num-cupom-extra {
+    font-family: Louis-Regular;
+    text-transform: uppercase;
+    color: #4a4d52;
+    display: flex; }
+  /* line 210, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .col-tabela {
+    justify-content: flex-end; }
+    @media (max-width: 992px) {
+      /* line 210, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-tabela {
+        justify-content: center; } }
+    /* line 215, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .col-tabela .table {
+      width: 80%; }
+      /* line 218, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-tabela .table .thead {
+        background: #FFB334;
+        padding: 5px 10px;
+        transform: skewX(-20deg);
+        font-family: Louis-BoldItalic; }
+        /* line 223, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-tabela .table .thead .trow {
+          transform: skewX(20deg); }
+          /* line 225, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+          #com-cupons .col-tabela .table .thead .trow .cel:nth-child(2) {
+            border-left: 1px solid rgba(74, 77, 82, 0.5);
+            border-right: 1px solid rgba(74, 77, 82, 0.5); }
+          /* line 229, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+          #com-cupons .col-tabela .table .thead .trow .cel:nth-child(3) {
+            border-right: 1px solid rgba(74, 77, 82, 0.5); }
+      /* line 235, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-tabela .table .trow {
+        display: flex;
+        justify-content: space-between; }
+      /* line 241, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-tabela .table .tbody {
+        padding: 5px 10px; }
+        /* line 243, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-tabela .table .tbody .trow {
+          position: relative; }
+          /* line 245, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+          #com-cupons .col-tabela .table .tbody .trow .cel {
+            padding: 10px 0; }
+          /* line 248, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+          #com-cupons .col-tabela .table .tbody .trow .cel:nth-child(2) {
+            border-left: 1px solid rgba(74, 77, 82, 0.5);
+            border-right: 1px solid rgba(74, 77, 82, 0.5); }
+          /* line 252, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+          #com-cupons .col-tabela .table .tbody .trow .cel:nth-child(3) {
+            border-right: 1px solid rgba(74, 77, 82, 0.5); }
+        /* line 257, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-tabela .table .tbody .trow:hover:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-bottom: 1px solid rgba(74, 77, 82, 0.5);
+          transform: translateY(-100%); }
+        /* line 268, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-tabela .table .tbody .trow:hover .cel:first-child:before {
+          content: '>';
+          font-size: 1.2em;
+          font-weight: bold;
+          position: absolute;
+          top: 50%;
+          left: -12px;
+          transform: translateY(-55%); }
+        /* line 278, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-tabela .table .tbody .trow:hover .cel:last-child:after {
+          content: '<';
+          font-size: 1.2em;
+          font-weight: bold;
+          position: absolute;
+          top: 50%;
+          right: -12px;
+          transform: translateY(-55%); }
+        /* line 288, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-tabela .table .tbody .trow:nth-child(even):after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 0;
+          right: 0;
+          bottom: 5px;
+          background: rgba(255, 255, 255, 0.5);
+          z-index: -1;
+          transform: skewX(-20deg); }
+      /* line 300, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-tabela .table .cel {
+        width: 25%;
+        text-align: center;
+        position: relative; }
+  /* line 308, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .col-meus-numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    /* line 313, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .col-meus-numeros .meus-numeros {
+      background: #FFB334;
+      width: 70%;
+      padding: 5px 0;
+      transform: skewX(-20deg); }
+      /* line 318, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-meus-numeros .meus-numeros p {
+        font-family: Louis-BoldItalic;
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+        transform: skewX(20deg); }
+    /* line 327, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .col-meus-numeros .numeros {
+      width: 70%;
+      position: relative;
+      left: -10px;
+      margin-top: 5px;
+      padding: 20px 0; }
+      /* line 334, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-meus-numeros .numeros table {
+        width: 90%;
+        transform: skewX(-20deg) translateX(50%);
+        position: relative;
+        left: -50%; }
+        /* line 340, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-meus-numeros .numeros table tr {
+          transform: skewX(20deg); }
+        /* line 343, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-meus-numeros .numeros table td {
+          width: 50%;
+          text-align: center;
+          padding: 5px 0; }
+        /* line 348, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-meus-numeros .numeros table td:first-child {
+          padding-top: 0; }
+        /* line 351, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-meus-numeros .numeros table td:last-child {
+          padding-bottom: 0; }
+    /* line 356, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .col-meus-numeros .numeros:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -30px;
+      right: 30px;
+      bottom: 0;
+      background: #FFFFFF;
+      z-index: -1;
+      transform: skewX(-20deg); }
+  /* line 369, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+  #com-cupons .col-num-cupom-extra {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px; }
+    @media (max-width: 992px) {
+      /* line 369, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-num-cupom-extra {
+        justify-content: center;
+        margin-top: 20px; } }
+    /* line 378, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .col-num-cupom-extra .numero-cupom-extra {
+      padding: 10px;
+      position: relative;
+      font-size: 1.2em;
+      padding: 10px 20px; }
+      /* line 383, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+      #com-cupons .col-num-cupom-extra .numero-cupom-extra p {
+        color: #FFFFFF;
+        margin: 0; }
+        /* line 386, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-num-cupom-extra .numero-cupom-extra p span {
+          color: #4a4d52; }
+        /* line 389, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+        #com-cupons .col-num-cupom-extra .numero-cupom-extra p strong {
+          font-weight: normal;
+          font-family: Louis-BoldItalic;
+          color: #4a4d52;
+          font-size: 1.2em; }
+    /* line 397, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_com-cupons.scss */
+    #com-cupons .col-num-cupom-extra .numero-cupom-extra:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #FFB334;
+      transform: skewX(-20deg);
+      z-index: -1; }
+
+/* line 3, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+#perfil {
+  margin-top: 50px; }
+  /* line 5, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .skewTitle {
+    background-color: #FFFFFF;
+    color: #4a4d52;
+    font-size: 1.2em;
+    transform: skewX(-20deg);
+    font-family: Louis-BoldItalic;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 30px 35px;
+    position: relative;
+    margin-bottom: 40px; }
+    @media (max-width: 600px) {
+      /* line 5, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .skewTitle {
+        transform: skewX(-5deg); } }
+    /* line 14, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .skewTitle h2 {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 0; }
+      @media (max-width: 600px) {
+        /* line 14, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+        #perfil .skewTitle h2 {
+          transform: skewX(5deg); } }
+  /* line 20, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .skewTitle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -8px;
+    width: 5px;
+    background: #FFB334;
+    margin-left: 3px; }
+  /* line 31, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .col-infos-cupons {
+    position: relative;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; }
+    @media (max-width: 768px) {
+      /* line 31, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .col-infos-cupons {
+        flex-direction: column;
+        align-items: center;
+        height: 100%; } }
+  /* line 47, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .esta-concorrendo,
+  #perfil .qtd-cupons,
+  #perfil .credito,
+  #perfil .observacoes {
+    height: 100%;
+    margin-right: 5px;
+    display: flex;
+    align-items: center; }
+    @media (max-width: 768px) {
+      /* line 47, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .esta-concorrendo,
+      #perfil .qtd-cupons,
+      #perfil .credito,
+      #perfil .observacoes {
+        margin-bottom: 20px;
+        width: 90%; } }
+  /* line 58, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .esta-concorrendo {
+    background-color: #FFB334;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    transform: skewX(-20deg);
+    font-family: Louis-BoldItalic;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center; }
+    @media (max-width: 600px) {
+      /* line 58, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .esta-concorrendo {
+        transform: skewX(-5deg); } }
+    @media (max-width: 768px) {
+      /* line 58, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .esta-concorrendo {
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
+    /* line 73, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .esta-concorrendo p {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 1.2;
+      text-align: right; }
+      @media (max-width: 600px) {
+        /* line 73, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+        #perfil .esta-concorrendo p {
+          transform: skewX(5deg); } }
+      /* line 78, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .esta-concorrendo p span {
+        color: #4a4d52; }
+  /* line 84, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .qtd-cupons {
+    background-color: #FFFFFF;
+    color: #4a4d52;
+    font-size: 1em;
+    transform: skewX(-20deg);
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    position: relative;
+    margin-right: 15px; }
+    @media (max-width: 600px) {
+      /* line 84, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .qtd-cupons {
+        transform: skewX(-5deg); } }
+    @media (max-width: 768px) {
+      /* line 84, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .qtd-cupons {
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px; } }
+    /* line 96, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .qtd-cupons p {
+      transform: skewX(20deg);
+      margin: 0;
+      line-height: 1;
+      text-align: center; }
+      @media (max-width: 600px) {
+        /* line 96, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+        #perfil .qtd-cupons p {
+          transform: skewX(5deg); } }
+      /* line 101, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .qtd-cupons p span {
+        font-family: Louis-BoldItalic;
+        font-size: 3em; }
+  /* line 107, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .qtd-cupons::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -8px;
+    width: 5px;
+    background: #4a4d52;
+    margin-left: 3px; }
+  /* line 118, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .credito {
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative; }
+    @media (max-width: 768px) {
+      /* line 118, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .credito {
+        margin-top: 20px; } }
+    /* line 127, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .credito .txt-credito {
+      position: absolute;
+      top: -12px;
+      left: 30px;
+      font-size: 1.5em;
+      font-family: Louis-BoldItalic; }
+      /* line 133, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .credito .txt-credito p {
+        margin: 0;
+        line-height: 0;
+        color: #4a4d52; }
+    /* line 140, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .credito .valor-credito {
+      background-color: #4a4d52;
+      color: #FFFFFF;
+      font-size: 1em;
+      transform: skewX(-20deg);
+      display: flex;
+      align-items: center;
+      padding: 5px 20px;
+      position: relative;
+      height: 100%; }
+      @media (max-width: 600px) {
+        /* line 140, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+        #perfil .credito .valor-credito {
+          transform: skewX(-5deg); } }
+      @media (max-width: 768px) {
+        /* line 140, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+        #perfil .credito .valor-credito {
+          width: 100%;
+          justify-content: center;
+          padding-top: 20px;
+          padding-bottom: 20px; } }
+      /* line 153, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .credito .valor-credito p {
+        transform: skewX(20deg);
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.5em; }
+        @media (max-width: 600px) {
+          /* line 153, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+          #perfil .credito .valor-credito p {
+            transform: skewX(5deg); } }
+        /* line 161, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+        #perfil .credito .valor-credito p .moeda {
+          align-self: flex-end; }
+        /* line 164, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+        #perfil .credito .valor-credito p .reais {
+          font-size: 2.5em;
+          margin: 0 5px;
+          line-height: 0.9; }
+    /* line 171, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .credito .valor-credito::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -8px;
+      width: 5px;
+      background: #FFB334;
+      margin-left: 3px; }
+  /* line 183, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .observacoes {
+    font-family: Louis-Italic;
+    text-transform: uppercase;
+    color: #4a4d52;
+    font-size: 0.85em;
+    margin-left: 20px;
+    width: 19%; }
+    @media (max-width: 768px) {
+      /* line 183, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .observacoes {
+        width: 90%;
+        justify-content: center;
+        margin: 0; } }
+    /* line 195, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .observacoes p {
+      margin: 0; }
+  /* line 200, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .col-carros {
+    text-align: center; }
+    /* line 202, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .col-carros img {
+      width: 70%; }
+  /* line 207, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .row-botoes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; }
+  /* line 213, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+  #perfil .botoes {
+    display: flex;
+    align-items: center;
+    width: 75%; }
+    @media (max-width: 768px) {
+      /* line 213, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+      #perfil .botoes {
+        flex-direction: column; } }
+    /* line 220, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/_perfil.scss */
+    #perfil .botoes img {
+      width: 100%; }
+
+@media (max-width: 1200px) {
+  /* line 1689, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .cadastro-form p {
+    font-size: 2em; }
+  /* line 1693, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .cadastro-form {
+    margin-top: 72px; }
+  /* line 1697, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .chamada {
+    margin-left: 60px; }
+  /* line 1701, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar {
+    padding-top: 68px; }
+  /* line 1705, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios {
+    padding-top: 85px; }
+  /* line 1709, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos {
+    padding-top: 68px; }
+  /* line 1713, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq {
+    padding-top: 68px; } }
+
+@media (max-width: 992px) {
+  /* line 1719, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  body {
+    background: #b3c6db; }
+  /* line 1722, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  header {
+    position: fixed;
+    z-index: 23;
+    width: 100%; }
+    /* line 1727, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .cabecalho .logo {
+      margin-left: 20px; }
+    /* line 1731, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .main-menu {
+      display: none; }
+    /* line 1735, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    header .login-form {
+      display: none;
+      top: 5px; }
+  /* line 1741, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .btn-abre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  /* line 1746, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .menu-abrir {
+    border: 0;
+    background: none;
+    color: #FFFFFF;
+    margin-right: 20px; }
+  /* line 1753, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .menu-fechar {
+    border: 0;
+    background: none;
+    color: #FFFFFF; }
+  /* line 1758, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .mobile-menu {
+    display: block;
+    background-color: #4a4d52;
+    padding: 1em;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    right: -90%;
+    transition: right 0.3s ease-out; }
+    /* line 1776, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .mobile-menu ul {
+      margin-top: 30px;
+      padding: 0 6px; }
+      /* line 1780, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .mobile-menu ul li {
+        list-style: none;
+        margin-bottom: 20px; }
+      /* line 1785, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .mobile-menu ul li a {
+        font-family: Louis-CondensedRegular;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-decoration: none;
+        position: relative; }
+      /* line 1794, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .mobile-menu ul li a:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        border-bottom: 5px solid #FFB334; }
+      /* line 1802, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .mobile-menu ul li a:hover:after {
+        width: 100%; }
+  /* line 1807, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .menu-ativo .mobile-menu {
+    right: 0; }
+  /* line 1811, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .menu-ativo:after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 22; }
+  /* line 1824, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .coluna-carro {
+    display: none; }
+  /* line 1827, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login {
+    margin-bottom: 0; }
+  /* line 1831, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .coluna-carro-mobile {
+    display: block; }
+    /* line 1833, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .login .coluna-carro-mobile .carro img {
+      height: 100%;
+      width: 100%;
+      transform: translateX(0%); }
+  /* line 1840, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .login-form {
+    display: block;
+    top: 4px; }
+  /* line 1845, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .cadastro-form {
+    margin-top: 8px; }
+  /* line 1849, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .botao-servicos {
+    text-align: center; }
+  /* line 1853, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .row-login {
+    display: flex;
+    flex-direction: column; }
+  /* line 1858, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .servicos-pecas {
+    order: 3;
+    margin-top: 15px; }
+  /* line 1862, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .visa {
+    order: 4;
+    margin-top: 15px; }
+  /* line 1867, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .servicos-index {
+    order: 5;
+    margin-top: 15px; }
+  /* line 1872, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .botao-servicos img {
+    width: 70%; }
+  /* line 1875, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .servicos-pecas img {
+    width: 100%; }
+  /* line 1878, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .visa {
+    text-align: center; }
+  /* line 1881, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .visa img {
+    width: 85%; }
+  /* line 1885, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar .passos {
+    margin-top: 50px;
+    text-align: center; }
+  /* line 1890, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar .passos img {
+    width: 90%;
+    height: 90%;
+    margin: 0; }
+  /* line 1896, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar .mecanico {
+    display: none; }
+  /* line 1900, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .todos-premios {
+    display: none; }
+  /* line 1905, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .chamada {
+    margin-left: 20px; }
+  /* line 1909, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .premios-row {
+    display: block;
+    text-align: center; }
+    /* line 1913, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .premios .premios-row img {
+      margin-bottom: 20px;
+      width: 100%; }
+  /* line 1918, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .chamada {
+    margin-top: 30px; }
+  /* line 1922, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios:after {
+    background-size: cover;
+    top: -100px; }
+  /* line 1927, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos {
+    background: #FFFFFF; }
+  /* line 1931, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .sortudo-destaque {
+    display: none; }
+  /* line 1935, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento .col-scroll {
+    justify-content: flex-start; }
+  /* line 1939, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento #content-4 {
+    width: 90%; }
+  /* line 1943, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento #content-4 {
+    line-height: 1.2em;
+    font-size: 0.8em; }
+  /* line 1948, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento .mCustomScrollbar {
+    padding: 0px 20px 10px 0; }
+  /* line 1952, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  #content-4 ol ~ p {
+    margin-left: 20px; }
+  /* line 1956, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .container-acordion {
+    margin-left: 0;
+    width: 100%; }
+  /* line 1961, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .container-acordion button.accordion {
+    transform: skewX(0deg); }
+  /* line 1965, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .container-acordion button.accordion .numero::before {
+    transform: skewX(0deg) translateY(50%) translateX(52%); }
+  /* line 1969, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .container-acordion button.accordion:before {
+    display: none; }
+  /* line 1972, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .container-acordion button.accordion:after {
+    display: none; }
+  /* line 1976, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .container-acordion button.accordion span {
+    transform: skewX(0deg); }
+  /* line 1980, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .container-acordion button.accordion .numero span {
+    transform: skewX(0deg); }
+  /* line 1985, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer .row-footer {
+    flex-direction: column; }
+    /* line 1988, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer .row-footer .redes-sociais {
+      padding: 0 50px; }
+      /* line 1991, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer .row-footer .redes-sociais .social-icon {
+        border: 0; }
+      /* line 1995, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer .row-footer .redes-sociais .infos {
+        padding: 20px 0;
+        border-bottom: 1px solid #FFFFFF;
+        border-top: 1px solid #FFFFFF; }
+    /* line 2002, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer .row-footer .contato-col {
+      border: 0;
+      margin-top: 40px; }
+    /* line 2007, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer .row-footer .logo {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      flex-direction: column; }
+      /* line 2013, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      footer .row-footer .logo img {
+        width: 130px; }
+  /* line 2019, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .col-usuario {
+    display: none; }
+  /* line 2023, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .box {
+    height: 80px;
+    width: auto;
+    margin: 10px -1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #FFB334;
+    padding-left: 1em;
+    font-family: Louis-Italic;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #4a4d52; }
+    /* line 2038, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .box .box-usuario {
+      flex-grow: 1;
+      padding-left: 10px; }
+      /* line 2042, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .box .box-usuario p {
+        margin: 0; }
+    /* line 2047, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .box .box-perfil, .box .box-cupons {
+      width: 60px;
+      margin-right: 10px;
+      background: #ffd234; }
+      /* line 2052, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .box .box-perfil img, .box .box-cupons img {
+        width: 22px; }
+    /* line 2057, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .box .box-perfil, .box .box-cupons, .box .box-sair {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 10px; }
+      /* line 2065, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .box .box-perfil a, .box .box-cupons a, .box .box-sair a {
+        font-size: 0.8em;
+        color: #4a4d52;
+        text-decoration: none;
+        text-align: center; }
+      /* line 2072, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .box .box-perfil a:hover, .box .box-cupons a:hover, .box .box-sair a:hover {
+        text-decoration: underline; }
+      /* line 2076, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .box .box-perfil img, .box .box-cupons img, .box .box-sair img {
+        margin-bottom: 10px; }
+    /* line 2081, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .box .box-sair {
+      width: 40px;
+      background: #ff5a34; }
+      /* line 2085, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .box .box-sair img {
+        width: 100%; }
+      /* line 2089, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+      .box .box-sair a {
+        color: #FFFFFF; }
+  /* line 2095, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .row-nota-fiscal {
+    display: flex;
+    flex-direction: column; }
+  /* line 2100, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .col-carros {
+    order: 3; }
+  /* line 2104, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .col-form {
+    order: 2; }
+  /* line 2108, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .container-cadastro .row-steps {
+    display: block; }
+  /* line 2111, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .container-cadastro .row-veiculo {
+    display: block; }
+  /* line 2114, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .container-cadastro .row-veiculo .ano div:nth-child(2) {
+    margin-left: -15px;
+    margin-top: 20px; }
+  /* line 2118, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .carro img.carro-lg {
+    display: none; }
+  /* line 2121, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .nota-fiscal .carro {
+    justify-content: center; }
+    /* line 2123, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    .nota-fiscal .carro img.carro-xs {
+      display: block;
+      height: 100%;
+      width: 100%; }
+  /* line 2130, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer.page-on .contato-col {
+    padding-right: 0; }
+  /* line 2133, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer.page-on .logo {
+    padding-left: 0; } }
+
+@media (max-width: 600px) {
+  /* line 2139, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .como-participar .title {
+    margin-left: 20px;
+    font-size: 0.5em; }
+  /* line 2144, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .premios .title {
+    margin-left: 20px;
+    font-size: 0.5em; }
+  /* line 2149, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .sortudos .title {
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-size: 0.5em; }
+  /* line 2155, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .regulamento .title {
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-size: 0.5em; }
+  /* line 2161, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .faq .title {
+    margin-bottom: 50px;
+    margin-left: 20px;
+    font-size: 0.5em; }
+  /* line 2167, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer.page-on .contato-col .contact form {
+    flex-direction: column; }
+    /* line 2170, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer.page-on .contato-col .contact form div {
+      margin: 10px -15px;
+      width: 100%; }
+    /* line 2175, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer.page-on .contato-col .contact form div:first-child {
+      width: 100%; }
+  /* line 2182, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  footer.page-on .contato-col .infos {
+    padding-right: 15px; }
+    /* line 2185, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+    footer.page-on .contato-col .infos p {
+      text-align: center; } }
+
+@media (max-width: 360px) {
+  /* line 2193, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .cadastro-form {
+    margin-top: 8px; }
+  /* line 2197, C:/Users/rafae/Google Drive/PROJETO GM/projetogm/sass/style-index.scss */
+  .login .cadastro-form p:nth-child(2) {
+    margin-left: 40px; } }
+
+/*# sourceMappingURL=style-index.css.map */

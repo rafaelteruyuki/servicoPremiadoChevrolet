@@ -1,0 +1,41 @@
+@mixin skewElement ($bgColor, $txtColor, $txtSize){
+	background-color: $bgColor;
+	color: $txtColor;
+	font-size: $txtSize;
+	transform: skewX(-20deg);
+	@media (max-width:600px){
+		transform: skewX(-5deg);
+	}
+}
+
+@mixin unskewContent{
+	transform: skewX(20deg);
+	@media (max-width:600px){
+		transform: skewX(5deg);
+	}
+}
+
+@mixin fioEmVolta ($gap, $borderColor){
+	content: '';
+	position: absolute;
+	top: $gap;
+	left: $gap;
+	bottom: $gap;
+	right: $gap;
+	border: 1px solid;
+	border-color: $borderColor;
+}
+
+@mixin botao ($bgCorUm, $bgCorDois){
+	width: 100%;
+	display: block;
+	padding: 15px;
+	color: $branco;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: Louis;
+	font-size: 1.4em;
+	text-decoration: none;
+	background: linear-gradient(to bottom, $bgCorUm 50%, $bgCorDois 50%);
+	border: 1px solid lighten($bgCorUm, 15);
+}

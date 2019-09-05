@@ -1,0 +1,409 @@
+@import "mixins";
+
+#com-cupons{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	.skewTitle{
+		@include skewElement ($branco, $cinza, 1.2em);
+		font-family: Louis-BoldItalic;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 30px 35px;
+		position: relative;
+		margin-bottom: 40px;
+		
+		h2{
+			@include unskewContent;
+			margin: 0;
+			line-height: 0;
+		}
+	}
+	.skewTitle::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -8px;
+		width: 5px;
+		background: $amarelo;
+		margin-left: 3px;
+	}
+	
+	.col-infos-cupons{
+		position: relative;
+		height: 90px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		@media (max-width: 768px){
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+		}
+	}
+	
+	.esta-concorrendo,
+	.qtd-cupons,
+	.credito,
+	.observacoes{
+		height: 100%;
+		margin-right: 5px;
+		display: flex;
+		align-items: center;
+		@media (max-width: 768px){
+			margin-bottom: 20px;
+			width: 90%;
+		}
+	}
+	
+	.esta-concorrendo{
+		@include skewElement ($amarelo, $branco, 1.5em);
+		font-family: Louis-BoldItalic;
+		text-transform: uppercase;
+		padding: 5px 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+    	justify-content: center;
+		@media (max-width: 768px){
+			align-items: center;
+			padding-top:20px;
+				padding-bottom: 20px;
+		}
+		
+		p{
+			@include unskewContent;
+			margin: 0;
+			line-height: 1.2;
+			text-align: right;
+			span{
+				color: $cinza;
+			}
+		}
+	}
+	
+	.qtd-cupons{
+		@include skewElement ($branco, $cinza, 1em);
+		font-family: Louis-Italic;
+		text-transform: uppercase;
+		padding: 5px 35px;
+		position: relative;
+		margin-right: 15px;
+		@media (max-width: 768px){
+			justify-content: center;
+			padding-top:20px;
+				padding-bottom: 20px;
+		}
+		p{
+			@include unskewContent;
+			margin: 0;
+			line-height: 1;
+			text-align: center;
+			span{
+				font-family: Louis-BoldItalic;
+				font-size: 3em;
+			}
+		}
+	}
+	.qtd-cupons::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -8px;
+		width: 5px;
+		background: $cinza;
+		margin-left: 3px;
+	}
+	
+	.credito{
+		font-family: Louis-Italic;
+		text-transform: uppercase;
+		color: $branco;
+		position: relative;
+		@media (max-width: 768px){
+			margin-top: 20px;
+		}
+		
+		.txt-credito{
+			position: absolute;
+			top: -12px;
+			left: 30px;
+			font-size: 1.5em;
+			font-family: Louis-BoldItalic;
+			p{
+				margin: 0;
+				line-height: 0;
+				color: $cinza;
+			}
+		}
+		
+		.valor-credito{
+			@include skewElement ($cinza, $branco, 1em);
+			display: flex;
+			align-items: center;
+			padding: 5px 20px;
+			position: relative;
+			height: 100%;
+			@media (max-width: 768px){
+				width: 100%;
+				justify-content: center;
+				padding-top:20px;
+				padding-bottom: 20px;
+			}
+			p{
+				@include unskewContent;
+				margin: 0;
+				display: flex;
+				align-items: flex-start;
+				font-size: 1.5em;
+				
+				
+				.moeda{
+					align-self: flex-end;
+				}
+				.reais{
+					font-size: 2.5em;
+					margin:0 5px;
+					line-height: 0.9;
+				}
+			}
+		}
+		.valor-credito::after{
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: -8px;
+			width: 5px;
+			background: $amarelo;
+			margin-left: 3px;
+		}
+	}
+	
+	.observacoes{
+		    font-family: Louis-Italic;
+			text-transform: uppercase;
+			color: #4a4d52;
+			font-size: 0.85em;
+			margin-left: 20px;
+			width: 19%;
+		@media (max-width: 768px){
+				width: 90%;
+				justify-content: center;
+			margin: 0;
+			}
+		p{
+			margin: 0;
+		}
+	}
+	
+	.col-tabela,
+	.col-meus-numeros,
+	.col-num-cupom-extra{
+		font-family: Louis-Regular;
+		text-transform: uppercase;
+		color: $cinza;
+		display: flex;
+	}
+	
+	.col-tabela{
+		justify-content: flex-end;
+		@media (max-width: 992px){
+			justify-content: center;
+		}
+		.table{
+			width: 80%;
+			
+			.thead{
+				background: $amarelo;
+				padding: 5px 10px;
+				transform: skewX(-20deg);
+				font-family: Louis-BoldItalic;
+				.trow{
+					transform: skewX(20deg);
+					.cel:nth-child(2){
+						border-left: 1px solid rgba(74, 77, 82, 0.5) ;
+						border-right: 1px solid rgba(74, 77, 82, 0.5);
+					}
+					.cel:nth-child(3){
+						border-right: 1px solid rgba(74, 77, 82, 0.5);
+					}
+				}
+			}
+			
+			.trow{
+				display: flex;
+				justify-content: space-between;
+				
+			}
+			
+			.tbody{
+				    padding: 5px 10px;
+				.trow{
+					position: relative;
+					.cel{
+						padding: 10px 0;
+					}
+					.cel:nth-child(2){
+						border-left: 1px solid rgba(74, 77, 82, 0.5) ;
+						border-right: 1px solid rgba(74, 77, 82, 0.5);
+					}
+					.cel:nth-child(3){
+						border-right: 1px solid rgba(74, 77, 82, 0.5);
+					}
+				}
+				
+				.trow:hover:before{
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					border-bottom: 1px solid rgba(74, 77, 82, 0.5);
+					transform: translateY(-100%);
+				}
+				
+				.trow:hover .cel:first-child:before{
+					content: '>';
+					font-size: 1.2em;
+					font-weight: bold;
+					position: absolute;
+					top: 50%;
+					left: -12px;
+					transform: translateY(-55%);
+				}
+				
+				.trow:hover .cel:last-child:after{
+					content: '<';
+					font-size: 1.2em;
+					font-weight: bold;
+					position: absolute;
+					top: 50%;
+					right: -12px;
+					transform: translateY(-55%);
+				}
+				
+				.trow:nth-child(even):after{
+					content: '';
+					position: absolute;
+					top: 5px;
+					left: 0;
+					right: 0;
+					bottom: 5px;
+					background: rgba(255, 255, 255, 0.5);
+					z-index: -1;
+					transform: skewX(-20deg);
+				}
+			}
+			.cel{
+				width: 25%;
+				text-align: center;
+				position: relative;
+			}
+		}
+	}
+	
+	.col-meus-numeros{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		.meus-numeros{
+			background: $amarelo;
+			width: 70%;
+			padding: 5px 0;
+			transform: skewX(-20deg);
+			p{
+				font-family: Louis-BoldItalic;
+				font-size: 2em;
+				margin: 0;
+				text-align: center;
+				transform: skewX(20deg);
+			}
+		}
+		
+		.numeros{
+			width: 70%;
+			position: relative;
+			left: -10px;
+			margin-top: 5px;
+			padding: 20px 0;
+			
+			table{
+				width: 90%;
+				transform: skewX(-20deg) translateX(50%);
+				position: relative;
+				left: -50%;
+				
+				tr{
+					transform: skewX(20deg);
+				}
+				td{
+					width: 50%;
+					text-align: center;
+					padding: 5px 0;
+				}
+				td:first-child{
+					padding-top: 0;
+				}
+				td:last-child{
+					padding-bottom: 0;
+				}
+			}
+		}
+		.numeros:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -30px;
+			right: 30px;
+			bottom: 0;
+			background: #FFFFFF;
+			z-index: -1;
+			transform: skewX(-20deg);
+		}
+	}
+	
+	.col-num-cupom-extra{
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 50px;
+		@media (max-width: 992px){
+			justify-content: center;
+			margin-top: 20px;
+		}
+		
+		.numero-cupom-extra{
+			padding: 10px;
+			position: relative;
+			font-size: 1.2em;
+			padding: 10px 20px;
+			p{
+				color: $branco;
+				margin: 0;
+				span{
+					color: $cinza;
+				}
+				strong{
+					font-weight: normal;
+					font-family: Louis-BoldItalic;
+					color: $cinza;
+					font-size: 1.2em;
+				}
+			}
+		}
+		.numero-cupom-extra:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: $amarelo;
+			transform: skewX(-20deg);
+			z-index: -1; 
+		}
+	}
+}

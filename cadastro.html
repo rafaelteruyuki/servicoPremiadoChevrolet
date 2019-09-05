@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro - Promoção Serviço Premiado</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/jQuery/jquery-3.1.0.min.js"></script>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- font-icons -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+	<!-- estilo da página -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="cabecalho col-xs-12">
+				<div class="logo">
+					<img src="images/logo-chevrolet.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="main">
+	<div class="container">
+		<div class="row">
+			<div class="cadastro col-xs-12 col-md-6">
+					<div class="title">
+						<p>cadastro</p>
+					</div>
+				
+					<div class="carro">
+						<img src="images/carros-index.png" >
+					</div>
+					
+					<div class="botao-servicos">
+						<a href=""><img src="images/botao-servicos.png" alt=""></a>
+					</div>
+			</div>
+
+			<div class="formulario col-xs-12 col-md-6">
+				<form>
+					<div class="row">
+						<div class="form-group col-xs-12 col-md-6">
+							<label for="senha">senha</label>
+							<input type="password" class="form-control">
+						</div>
+						<div class="form-group col-xs-12 col-md-6">
+							<label for="confirma-senha">confirmação de senha</label>
+							<input type="password" class="form-control">
+							<p class="text-warning">* Senha incoreta</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-xs-12 col-md-4">
+							<label for="cep">cep</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group col-xs-12 col-md-8">
+							<label for="endereco">endereço</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-xs-4 col-md-2">
+							<label for="numero">número</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group col-xs-8 col-md-6">
+							<label for="complemento">complemento</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group col-xs-12 col-md-4">
+							<label for="bairro">bairro</label>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="form-group col-xs-8 col-md-6">
+							<label for="cidade">cidade</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group col-xs-4 col-md-3">
+							<label for="estado">estado</label>
+							<select class="form-control">
+								<option value="AC">AC</option> 
+								<option value="AL">AL</option>
+								<option value="AP">AP</option>
+								<option value="AM">AM</option>
+								<option value="BA">BA</option>
+								<option value="CE">CE</option>
+								<option value="DF">DF</option>
+								<option value="ES">ES</option>
+								<option value="GO">GO</option>
+								<option value="MA">MA</option>
+								<option value="MT">MT</option>
+								<option value="MS">MS</option>
+								<option value="MG">MG</option>
+								<option value="PA">PA</option> 
+								<option value="PB">PB</option>
+								<option value="PR">PR</option>
+								<option value="PE">PE</option>
+								<option value="PI">PI</option>
+								<option value="RJ">RJ</option>
+								<option value="RN">RN</option>
+								<option value="RS">RS</option>
+								<option value="RO">RO</option>
+								<option value="RR">RR</option>
+								<option value="SC">SC</option>
+								<option value="SP">SP</option>
+								<option value="SE">SE</option>
+								<option value="TO">TO</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="text-check checkbox col-xs-12 col-md-4">
+							<label>
+								<input type="checkbox" value="">Declaro que li e concordo com os termos do <a href="#">regulamento</a>.
+							</label>
+						</div>
+						<div class="text-check radio col-xs-12 col-md-8">
+							<p>Qual é a marca automotiva que oferece grandes chances de você ganhar prêmios?</p>
+							<label class="radio-inline">
+								<input type="radio" name="chevrolet">Chevrolet
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="outras">Outras
+							</label>
+						</div>
+					</div>
+					
+					<button type="submit" class="btn btn-default col-xs-12">confirmar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer id="contato">
+
+	<div class="container">
+		<div class="row">
+			<div class="redes-sociais col-xs-12 col-md-2">
+				<p>redes sociais</p>
+				<div class="social-icon row">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-youtube-play"></i></a>
+					<a href="#"><i class="fa fa-tumblr"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+
+			<div class="infos col-xs-12 col-md-8">
+				<p>
+				Período de participação: 30/09/2016 a 15/12/2016. Somente participam da Promoção os interessados que realizarem compras à partir de R$200,00 (duzentos reais) em produtos objeto da Promoção, em uma Concessionária Chevrolet, mediante a efetiva emissão da respectiva Nota Fiscal de compras dentro do período de participação da Promoção. Consulte o Regulamento completo no site www.Servicopremiado.com.br. Imagens meramente ilustrativa. Certificado de Autorização CAIXA nº X-XXXX/2016.
+				</p>
+			</div>
+
+			<div class="logo col-xs-12 col-md-2">
+				<img src="images/logo-chevrolet.png">
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

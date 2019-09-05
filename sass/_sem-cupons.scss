@@ -1,0 +1,224 @@
+@import "mixins";
+
+#sem-cupons{
+	margin-top: 50px;
+	.skewTitle{
+		@include skewElement ($branco, $cinza, 1.2em);
+		font-family: Louis-BoldItalic;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 30px 35px;
+		position: relative;
+		margin-bottom: 40px;
+		
+		h2{
+			@include unskewContent;
+			margin: 0;
+			line-height: 0;
+		}
+	}
+	.skewTitle::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -8px;
+		width: 5px;
+		background: $amarelo;
+		margin-left: 3px;
+	}
+	
+	.col-infos-cupons{
+		position: relative;
+		height: 90px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+		@media (max-width: 768px){
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+		}
+	}
+	
+	.esta-concorrendo,
+	.qtd-cupons,
+	.credito,
+	.observacoes{
+		height: 100%;
+		margin-right: 5px;
+		display: flex;
+		align-items: center;
+		@media (max-width: 768px){
+			margin-bottom: 20px;
+			width: 90%;
+		}
+	}
+	
+	.esta-concorrendo{
+		@include skewElement ($amarelo, $branco, 1.5em);
+		font-family: Louis-BoldItalic;
+		text-transform: uppercase;
+		padding: 5px 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+    	justify-content: center;
+		@media (max-width: 768px){
+			align-items: center;
+			padding-top:20px;
+				padding-bottom: 20px;
+		}
+		
+		p{
+			@include unskewContent;
+			margin: 0;
+			line-height: 1.2;
+			text-align: right;
+			span{
+				color: $cinza;
+			}
+		}
+	}
+	
+	.qtd-cupons{
+		@include skewElement ($branco, $cinza, 1em);
+		font-family: Louis-Italic;
+		text-transform: uppercase;
+		padding: 5px 35px;
+		position: relative;
+		margin-right: 15px;
+		@media (max-width: 768px){
+			justify-content: center;
+			padding-top:20px;
+				padding-bottom: 20px;
+		}
+		p{
+			@include unskewContent;
+			margin: 0;
+			line-height: 1;
+			text-align: center;
+			span{
+				font-family: Louis-BoldItalic;
+				font-size: 3em;
+			}
+		}
+	}
+	.qtd-cupons::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -8px;
+		width: 5px;
+		background: $cinza;
+		margin-left: 3px;
+	}
+	
+	.credito{
+		font-family: Louis-Italic;
+		text-transform: uppercase;
+		color: $branco;
+		position: relative;
+		@media (max-width: 768px){
+			margin-top: 20px;
+		}
+		
+		.txt-credito{
+			position: absolute;
+			top: -12px;
+			left: 30px;
+			font-size: 1.5em;
+			font-family: Louis-BoldItalic;
+			p{
+				margin: 0;
+				line-height: 0;
+				color: $cinza;
+			}
+		}
+		
+		.valor-credito{
+			@include skewElement ($cinza, $branco, 1em);
+			display: flex;
+			align-items: center;
+			padding: 5px 20px;
+			position: relative;
+			height: 100%;
+			@media (max-width: 768px){
+				width: 100%;
+				justify-content: center;
+				padding-top:20px;
+				padding-bottom: 20px;
+			}
+			p{
+				@include unskewContent;
+				margin: 0;
+				display: flex;
+				align-items: flex-start;
+				font-size: 1.5em;
+				
+				
+				.moeda{
+					align-self: flex-end;
+				}
+				.reais{
+					font-size: 2.5em;
+					margin:0 5px;
+					line-height: 0.9;
+				}
+			}
+		}
+		.valor-credito::after{
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: -8px;
+			width: 5px;
+			background: $amarelo;
+			margin-left: 3px;
+		}
+	}
+	
+	.observacoes{
+		    font-family: Louis-Italic;
+			text-transform: uppercase;
+			color: #4a4d52;
+			font-size: 0.85em;
+			margin-left: 20px;
+			width: 19%;
+		@media (max-width: 768px){
+				width: 90%;
+				justify-content: center;
+			margin: 0;
+			}
+		p{
+			margin: 0;
+		}
+	}
+	
+	.col-carros{
+		text-align: center;
+		img{
+			width: 70%;
+		}
+	}
+	
+	.row-botoes{
+		display: flex;
+    	justify-content: center;
+		margin-bottom: 50px;
+	}
+	
+	.botoes{
+		display: flex;
+		align-items: center;
+		width: 75%;
+		@media (max-width: 768px){
+			flex-direction: column;
+		}
+		img{
+			width: 100%;
+		}
+	}
+}

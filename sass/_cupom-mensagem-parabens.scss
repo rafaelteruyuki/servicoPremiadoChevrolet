@@ -1,0 +1,100 @@
+.cupom-mensagem-parabens{
+	h3{
+		font-size: 3.5em !important;
+		margin-top: 150px;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		@media (max-width:1200px){
+			font-size: 3em !important;
+		}
+		
+		@media (max-width:992px){
+			font-size: 3.5em !important;
+		}
+		@media (max-width:640px){
+			font-size: 2.5em !important;
+		}
+		@media (max-width:470px){
+			font-size: 1.5em !important;
+		}
+		
+		p{
+			margin: 0;
+		}
+		p:first-child{
+			color: $amarelo;
+		}
+		p:nth-child(2n+2){
+			text-align: right;
+		}
+		p:nth-child(2n+1){
+			text-align: left;
+		}
+	}
+	
+	h3::before{
+		content: '';
+		position: absolute;
+		top:-90px;
+		right: 75px;
+		
+		width: 108px;
+		height: 111px;
+		
+		background: url(../images/icon-festa-01.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		
+		@media (max-width:1200px){
+			right: 45px;
+		}
+		@media (max-width:992px){
+			right: 75px;
+		}
+		@media (max-width:640px){
+			right: 50px;
+			width: 90px;
+			height: 100px;
+		}
+		@media (max-width:470px){
+			right: 25px;
+			top:-45px;
+			width: 50px;
+			height: 60px;
+		}
+		
+	}
+	
+	h4{
+		font-family: Louis-Italic;
+		font-size: 2.5em;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 80px;
+		margin-bottom: 200px;
+		@media (max-width:1200px){
+			font-size: 2em !important;
+		}
+		@media (max-width:992px){
+			font-size: 2.5em !important;
+		}
+		@media (max-width:640px){
+			font-size: 1.5em !important;
+		}
+		@media (max-width:470px){
+			font-size: 1em !important;
+		}
+		
+		span{
+			color: $amarelo;
+		}
+	}
+}
+
+.nota-fiscal .container-cadastro {
+    background-image: -webkit-linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0));
+    background-image: -o-linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0));
+    background-image: linear-gradient(rgba(74, 77, 82, 0.7) 60%, rgba(74, 77, 82, 0));
+}

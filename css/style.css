@@ -1,0 +1,220 @@
+/* FONTES */
+@font-face {
+  font-family: Louis-BoldItalic;
+  src: url("../fonts/Louis-BoldItalic.eot");
+  src: url("../fonts/Louis-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-BoldItalic.woff") format("woff"), url("../fonts/Louis-BoldItalic.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: Louis-Bold;
+  src: url("../fonts/Louis-Bold.eot");
+  src: url("../fonts/Louis-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-Bold.woff") format("woff"), url("../fonts/Louis-Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: Louis-Italic;
+  src: url("../fonts/Louis-Italic.eot");
+  src: url("../fonts/Louis-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-Italic.woff") format("woff"), url("../fonts/Louis-Italic.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: Louis-Regular;
+  src: url("../fonts/Louis-Regular.eot");
+  src: url("../fonts/Louis-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-Regular.woff") format("woff"), url("../fonts/Louis-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: Louis-CondensedDemi;
+  src: url("../fonts/Louis-CondensedDemi.eot");
+  src: url("../fonts/Louis-CondensedDemi.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-CondensedDemi.woff") format("woff"), url("../fonts/Louis-CondensedDemi.svg#svgFontName") format("svg"); }
+@font-face {
+  font-family: Louis-CondensedRegular;
+  src: url("../fonts/Louis-CondensedRegular.eot");
+  src: url("../fonts/Louis-CondensedRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Louis-CondensedRegular.woff") format("woff"), url("../fonts/Louis-CondensedRegular.svg#svgFontName") format("svg"); }
+html, body {
+  height: 100%;
+  font-size: 14px; }
+
+body {
+  background: url("../images/background.jpg") no-repeat center -100px; }
+
+header {
+  max-height: 80px;
+  background: #4a4d52;
+  position: relative;
+  z-index: 999; }
+  header .cabecalho {
+    position: relative;
+    height: 80px; }
+    header .cabecalho .logo {
+      position: absolute;
+      z-index: 9999;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      header .cabecalho .logo img {
+        width: 100px;
+        display: table; }
+
+.main {
+  margin-bottom: 50px; }
+  .main .form-control:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: none; }
+  .main .cadastro {
+    margin-top: 50px;
+    text-align: center;
+    position: relative; }
+    .main .cadastro .title {
+      position: relative;
+      display: inline-block;
+      background: #FFFFFF;
+      padding: 15px 40px;
+      transform: skewX(-30deg); }
+      .main .cadastro .title p {
+        font-family: Louis-BoldItalic;
+        font-size: 2.5em;
+        line-height: 1;
+        text-transform: uppercase;
+        transform: skewX(30deg);
+        color: #4a4d52;
+        letter-spacing: 1px;
+        margin: 0; }
+    .main .cadastro .title::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -16px;
+      bottom: 0;
+      background: #FFB334;
+      width: 8px; }
+    .main .cadastro .carro {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 30px; }
+      .main .cadastro .carro img {
+        margin-top: 50px;
+        margin-right: 35px;
+        height: 500px; }
+    .main .cadastro .infos {
+      font-family: Louis-BoldItalic;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      width: 315px;
+      display: inline-block;
+      line-height: 1.2em;
+      margin: 20px 0; }
+      .main .cadastro .infos p {
+        margin: 0; }
+      .main .cadastro .infos p:first-child {
+        color: #686868;
+        text-align: left; }
+      .main .cadastro .infos p:last-child {
+        text-align: right; }
+  .main .formulario {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)); }
+    .main .formulario form {
+      margin-top: 50px;
+      font-family: Louis-Italic;
+      color: #4a4d52;
+      text-transform: uppercase;
+      padding: 0 20px; }
+      .main .formulario form label {
+        font-weight: normal; }
+      .main .formulario form input, .main .formulario form select, .main .formulario form button {
+        border: 0;
+        border-radius: 0;
+        text-transform: uppercase; }
+      .main .formulario form button {
+        font-family: Louis-Regular;
+        color: #FFFFFF;
+        font-size: 1.2em;
+        background: linear-gradient(to bottom, #ffc334 50%, #ffb334 50%);
+        padding: 8px 0;
+        margin-top: 25px;
+        position: relative;
+        cursor: pointer; }
+      .main .formulario form p.text-warning {
+        font-size: 0.8em;
+        margin-top: 5px; }
+      .main .formulario form .text-check label, .main .formulario form p {
+        font-size: 0.85em;
+        display: inline-block;
+        vertical-align: middle; }
+        .main .formulario form .text-check label a, .main .formulario form p a {
+          color: #4a4d52;
+          text-decoration: underline; }
+        .main .formulario form .text-check label input[type=checkbox], .main .formulario form .text-check label input[type=radio], .main .formulario form p input[type=checkbox], .main .formulario form p input[type=radio] {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 0 0 -20px;
+          border: 0;
+          background: #fff; }
+
+footer {
+  background-color: #4a4d52;
+  padding: 30px 0; }
+  footer .redes-sociais {
+    position: relative; }
+    footer .redes-sociais p {
+      text-transform: uppercase;
+      font-family: Louis-Italic;
+      margin-bottom: 10px;
+      font-size: 1em;
+      color: #FFFFFF; }
+    footer .redes-sociais .social-icon {
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 30px; }
+      footer .redes-sociais .social-icon a {
+        color: #FFFFFF;
+        font-size: 1.8em;
+        margin-right: 20px; }
+  footer .redes-sociais:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-right: 1px solid #FFFFFF; }
+  footer .infos p {
+    font-family: Louis-Regular;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    line-height: 1.6em;
+    margin: 0;
+    letter-spacing: 0.03em; }
+  footer .logo img {
+    width: 100px; }
+
+@media (max-width: 992px) {
+  header .cabecalho .logo {
+    position: relative;
+    justify-content: center; }
+
+  .main .cadastro .title {
+    margin-bottom: 30px; }
+    .main .cadastro .title p {
+      font-size: 2em; }
+  .main .cadastro .carro {
+    display: none; }
+  .main .cadastro .infos {
+    display: none; }
+  .main .cadastro .botao-servicos {
+    display: none; }
+
+  footer .redes-sociais {
+    padding-bottom: 30px; }
+    footer .redes-sociais .social-icon a {
+      margin-left: 20px;
+      font-size: 2em; }
+  footer .redes-sociais:after {
+    border-right: 0;
+    border-bottom: 1px solid #FFFFFF;
+    right: 15px;
+    left: 15px; }
+  footer .infos {
+    margin-bottom: 30px;
+    margin-top: 30px; }
+  footer .logo {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
